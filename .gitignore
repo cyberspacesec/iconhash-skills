@@ -1,130 +1,164 @@
-# Go项目特定
-/iconhash
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.out
-*.prof
-*.cover
 
-# 依赖管理
-/vendor/
-
-# 构建和分发目录
-/dist/
-/build/
-/bin/
-/release/
-**/debug/
-
-# Go特定的构建文件
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-debug.test
-__debug_bin
-
-# IDE和编辑器文件
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-*.sublime-project
-
-# OS特定文件
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# 日志和数据文件
-/logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.sqlite
-*.sqlite3
-*.db
-
-# 环境变量和配置
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-*.local.yml
-*.override.yml
-*.local.yaml
-*.override.yaml
-config.local.json
-
-# Docker相关
-.docker/
 !.docker/config.json
-docker-compose.override.yml
-
-# 前端相关
-/node_modules/
-/website/node_modules/
-/website/dist/
-/website/build/
-/website/.cache/
-.angular/
-.angular_cache/
-.sass-cache/
-coverage/
-.coverage/
-.nyc_output/
-.fusebox/
-.dynamodb/
-.eslintcache
-.npm
-.pnp.*
-.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
+!/samples/README.md
+# Air live reload
+# Build output
+# Certificate files (for certificate-hacker)
+# Configuration files with sensitive data
+# Coverage reports
+# Cursor特定
+# Database files
+# Debug files
+# Dependency directories (remove the comment below to include it)
+# Docker相关
+# Environment files
+# Go workspace file
+# Go项目特定
+# Go特定的构建文件
+# IDE files
+# IDE和编辑器文件
+# Log files
+# MCP related
+# Nuclei templates (custom)
+# OS generated files
+# OS特定文件
+# Output of the go coverage tool, specifically when used with LiteIDE
+# Profiling data
+# Submodule specific
+# Task runner
+# Temporary files
+# Test binary, built with `go test -c`
+# 临时文件
+# 依赖管理
+# 前端相关
+# 样本文件 (但保留README)
 # 持续集成和部署
+# 日志和数据文件
+# 构建和分发目录
+# 测试目录和文件
+# 环境变量和配置
+**/debug/
+*.bak
+*.cgo1.go
+*.cgo2.c
+*.cover
+*.crt
+*.db
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.key
+*.launch
+*.local.yaml
+*.local.yml
+*.log
+*.orig
+*.out
+*.override.yaml
+*.override.yml
+*.p12
+*.pem
+*.pprof
+*.prof
+*.so
+*.sqlite
+*.sqlite3
+*.sublime-project
+*.sublime-workspace
+*.swo
+*.swp
+*.temp
+*.test
+*.tmp
+*.yaml.bak
+*~
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+._*
+.air.toml
+.angular/
+.angular_cache/
+.c9/
+.circleci/
+.classpath
+.coverage/
+.cursor/ # Binaries for programs and plugins
+.docker/
+.dynamodb/
+.env
+.env.*.local
+.env.development
+.env.local
+.env.production
+.env.test
+.eslintcache
+.fusebox/
 .github/workflows/.gitignore
 .gitlab/
-.circleci/
+.gitmodule.*
+.idea/
+.mcp/
+.npm
+.nyc_output/
+.pnp.*
+.project
+.sass-cache/
+.settings/
 .travis.yml
-
-# 临时文件
-/tmp/
-*.tmp
-*.bak
-*.swp
-*.orig
-
-# 测试目录和文件
-/test/
+.vscode/
+.yarn/*
+/bin/
+/build/
+/cache/
 /coverage/
-coverage.*
+/dist/
+/iconhash
+/logs/
 /mocks/
-
-# 样本文件 (但保留README)
+/node_modules/
+/release/
 /samples/*
-!/samples/README.md
-
-# Cursor特定
-.cursor/ 
+/test/
+/tmp/
+/vendor/
+/website/.cache/
+/website/build/
+/website/dist/
+/website/node_modules/
+Taskfile.yml
+Thumbs.db
+__debug_bin
+_cgo_defun.c
+_cgo_export.*
+_cgo_gotypes.go
+config.json
+config.local.json
+config.yaml
+config.yml
+coverage.*
+coverage.html
+coverage.out
+coverage.txt
+coverage/
+debug
+debug.exe
+debug.test
+docker-compose.override.yml
+ehthumbs.db
+go.work
+npm-debug.log*
+secrets.yaml
+secrets.yml
+templates-custom/
+tmp/
+vendor/
+yarn-debug.log*
+yarn-error.log*
