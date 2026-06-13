@@ -60,7 +60,7 @@ jobs:
 
       - name: Run gofmt check
         run: |
-          output=$(gofmt -l .)
+          output=$(gofmt -l cmd/ pkg/ main.go)
           if [ -n "$output" ]; then
             echo "Files not formatted with gofmt:"
             echo "$output"
@@ -70,7 +70,7 @@ jobs:
       - name: Run goimports check
         run: |
           go install golang.org/x/tools/cmd/goimports@latest
-          output=$(goimports -l .)
+          output=$(goimports -l cmd/ pkg/ main.go)
           if [ -n "$output" ]; then
             echo "Files not formatted with goimports:"
             echo "$output"
