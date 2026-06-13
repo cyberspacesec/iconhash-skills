@@ -1,5 +1,5 @@
 # Builder stage
-FROM golang:1.21-alpine AS builder
+FROM golang:1.25-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -17,7 +17,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w -X main.version=$(git describe --tags --always) -X main.commit=$(git rev-parse --short HEAD) -X main.date=$(date -u +%Y-%m-%d) -X main.builtBy=docker" -o iconhash .
+RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w -X github.com/cyberspacesec/iconhash-skills/cmd.Version=$(git describe --tags --always 2>/dev/null || echo dev) -X github.com/cyberspacesec/iconhash-skills/cmd.BuildHash=$(git rev-parse --short HEAD 2>/dev/null || echo unknown) -X github.com/cyberspacesec/iconhash-skills/cmd.BuildDate=$(date -u +%Y-%m-%dT%H:%M:%SZ)" -o iconhash .
 
 # Final stage
 FROM alpine:latest
@@ -42,4 +42,4 @@ USER appuser
 ENTRYPOINT ["/app/iconhash"]
 
 # Default command
-CMD ["--help"] 
+CMD ["--help"]
