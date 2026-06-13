@@ -1,30 +1,31 @@
 package cmd
 
 import (
+	"context"
 	"fmt"
-	"os"
 
-	"github.com/cyberspacesec/go-iconhash/pkg/hasher"
-	"github.com/cyberspacesec/go-iconhash/pkg/util"
+	"github.com/cyberspacesec/iconhash-skills/pkg/hasher"
+	"github.com/cyberspacesec/iconhash-skills/pkg/util"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
-// NewURLCommand 创建URL命令
+// NewURLCommand creates the URL command
 func NewURLCommand() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "url [url]",
 		Short: "Generate hash from a URL",
 		Long: `Generate a favicon hash from a URL.
-		
+
 This command will fetch the favicon from the specified URL and calculate its hash.
-The hash can be formatted for use with search engines like Fofa or Shodan.
+The hash can be formatted for use with search engines like Fofa, Shodan, Censys,
+Quake, ZoomEye, and Hunter.
 
 Examples:
   iconhash url https://example.com
-  iconhash url -u https://example.com/favicon.ico --shodan
-  iconhash url https://example.com --uint32`,
-		Run: runURL,
+  iconhash url -u https://example.com/favicon.ico --engine shodan
+  iconhash url https://example.com --uint32 --engine fofa`,
+		RunE: runURL,
 		Args: func(cmd *cobra.Command, args []string) error {
 			// If URL is provided as positional arg, set it in the flags
 			if len(args) > 0 {
@@ -42,11 +43,13 @@ Examples:
 		},
 	}
 
+	SilenceUsageOnError(cmd)
+
 	return cmd
 }
 
 // runURL handles the URL command execution
-func runURL(cmd *cobra.Command, args []string) {
+func runURL(cmd *cobra.Command, args []string) error {
 	// Create a new hasher with the options from root command
 	options := &hasher.HashOptions{
 		UseUint32:          Uint32Flag,
@@ -58,31 +61,23 @@ func runURL(cmd *cobra.Command, args []string) {
 
 	// Debug info if enabled
 	if Debug {
-		fmt.Fprintf(os.Stderr, "🔍 URL: %s\n", URL)
-		fmt.Fprintf(os.Stderr, "🔧 Options: uint32=%v, timeout=%.0fs, skip-verify=%v\n",
+		fmt.Fprintf(cmd.ErrOrStderr(), "🔍 URL: %s\n", URL)
+		fmt.Fprintf(cmd.ErrOrStderr(), "🔧 Options: uint32=%v, timeout=%.0fs, skip-verify=%v\n",
 			options.UseUint32, options.RequestTimeout.Seconds(), options.InsecureSkipVerify)
 		if options.UserAgent != "" {
-			fmt.Fprintf(os.Stderr, "🕵️ User-Agent: %s\n", options.UserAgent)
+			fmt.Fprintf(cmd.ErrOrStderr(), "🕵️ User-Agent: %s\n", options.UserAgent)
 		}
 	}
 
 	// Calculate hash
-	fmt.Fprintf(os.Stderr, "🌐 Fetching favicon from %s...\n", URL)
-	hash, err := h.HashFromURL(URL)
+	fmt.Fprintf(cmd.ErrOrStderr(), "🌐 Fetching favicon from %s...\n", URL)
+	hash, err := h.HashFromURL(context.Background(), URL)
 	if err != nil {
-		color.Red("❌ Error calculating hash: %v", err)
-		os.Exit(1)
+		return wrapError("error calculating hash: %w", err)
 	}
 
-	// Determine output format
-	var format util.OutputFormat
-	if ShodanFormat {
-		format = util.FormatShodan
-	} else if FofaFormat {
-		format = util.FormatFofa
-	} else {
-		format = util.FormatPlain
-	}
+	// Get format from --engine flag
+	format := getEngineFormat()
 
 	// Format the hash
 	formatted := util.FormatHash(hash, format)
@@ -100,4 +95,6 @@ func runURL(cmd *cobra.Command, args []string) {
 		boldCyan.Printf("Formatted: ")
 		fmt.Println(formatted)
 	}
+
+	return nil
 }

@@ -1,371 +1,285 @@
-# go-iconhash
+# iconhash-skills
 
-A powerful tool for calculating favicon hashes used in cybersecurity reconnaissance. This tool is an improved implementation of [Becivells/iconhash](https://github.com/Becivells/iconhash).
+A powerful CLI tool and Go SDK for calculating favicon hashes used in cybersecurity reconnaissance. This tool is an improved implementation of [Becivells/iconhash](https://github.com/Becivells/iconhash).
 
 ## Features
 
 - Calculate MMH3 (MurmurHash3) hash of favicons
-- Multiple input sources:
-  - Direct URL (e.g., https://example.com/favicon.ico)
-  - Local file (e.g., favicon.ico)
-  - Base64 encoded data
-- Multiple output formats:
-  - Plain hash number
-  - Fofa search format (`icon_hash="123456789"`)
-  - Shodan search format (`http.favicon.hash:123456789`)
-- Supports both int32 (default) and uint32 hash outputs
+- Multiple input sources: URL, local file, base64 data, stdin
+- 6 search engine formats: Fofa, Shodan, Censys, Quake, ZoomEye, Hunter
+- Fingerprint database with 700+ known services for identification
+- Batch processing with concurrent workers
 - HTTP API server with authentication
 - Model Context Protocol (MCP) support for AI integration
-- Enhanced error handling and debugging
-- Modern CLI interface with help documentation
+- Full Go SDK for embedding in other tools
 - Docker support for containerized usage
+- Two build variants: Lite (small) and Full (offline-capable)
 
 ## Installation
 
-### From Source
+### Download Pre-built Binary (Recommended)
+
+Download from [GitHub Releases](https://github.com/cyberspacesec/iconhash-skills/releases/latest) for your platform.
+
+**Two build variants:**
+- **Lite** (`iconhash_lite_*`): Smaller binary, fingerprints auto-downloaded on first use
+- **Full** (`iconhash_full_*`): Larger binary with embedded fingerprints, works offline
+
+**Quick install (Linux/macOS):**
+```bash
+# Linux x86_64 (Lite)
+wget https://github.com/cyberspacesec/iconhash-skills/releases/latest/download/iconhash_lite_linux_x86_64.tar.gz
+tar xzf iconhash_lite_linux_x86_64.tar.gz
+chmod +x iconhash && sudo mv iconhash /usr/local/bin/
+
+# macOS Apple Silicon (Lite)
+wget https://github.com/cyberspacesec/iconhash-skills/releases/latest/download/iconhash_lite_macos_aarch64.tar.gz
+tar xzf iconhash_lite_macos_aarch64.tar.gz
+chmod +x iconhash && sudo mv iconhash /usr/local/bin/
+
+# Windows (download and extract zip)
+# https://github.com/cyberspacesec/iconhash-skills/releases/latest/download/iconhash_lite_windows_x86_64.zip
+```
+
+**Supported platforms:** Linux (x86_64, aarch64, i386, arm, riscv64), macOS (x86_64, aarch64), Windows (x86_64, aarch64, i386), FreeBSD (x86_64, aarch64)
+
+### Install via Go
 
 ```bash
-# Clone the repository
-git clone https://github.com/cyberspacesec/go-iconhash.git
-cd go-iconhash
+go install github.com/cyberspacesec/iconhash-skills/cmd/iconhash@latest
+```
 
-# Build the binary
+### Build from Source
+
+```bash
+git clone https://github.com/cyberspacesec/iconhash-skills.git
+cd iconhash-skills
+
+# Lite build (default, no embedded fingerprints)
 make build
+
+# Full build (with embedded fingerprints, works offline)
+make build-full
+
+# Install to $GOPATH/bin
+make install
 ```
 
-### Using Go
+### Docker
 
 ```bash
-go install github.com/cyberspacesec/go-iconhash/cmd/iconhash@latest
-```
-
-### Using Docker
-
-```bash
-# Pull the image
 docker pull cyberspacesec/iconhash:latest
-
-# Run with Docker
-docker run --rm cyberspacesec/iconhash:latest -u https://example.com/favicon.ico
+docker run --rm cyberspacesec/iconhash:latest url https://example.com/favicon.ico
 ```
 
-## Usage
-
-### Basic Usage
+## Quick Start
 
 ```bash
 # Hash from URL
-iconhash https://www.example.com/favicon.ico
+iconhash url https://www.example.com/favicon.ico
 
-# Hash from file
-iconhash favicon.ico
+# Identify a website (discover + hash + fingerprint lookup)
+iconhash identify https://example.com
 
-# Hash from base64 file
-iconhash -b64 encoded.txt
+# Lookup a hash in the fingerprint database
+iconhash lookup -- -305179312
 
-# Start the API server
+# Batch process
+iconhash batch -i urls.txt -o results.json
+
+# Start API server
 iconhash server -p 8080
 ```
 
-### Options
+## CLI Commands
 
-```
-Usage:
-  iconhash [flags] [url or file]
+| Command | Purpose |
+|---|---|
+| `iconhash url <url>` | Calculate hash from a URL |
+| `iconhash file <path>` | Calculate hash from a file |
+| `iconhash base64 <path>` | Calculate hash from base64 file |
+| `iconhash discover <url>` | Discover favicons on a site and hash them |
+| `iconhash identify <url>` | Discover + fingerprint identification |
+| `iconhash lookup <hash>` | Lookup hash in fingerprint database |
+| `iconhash batch` | Batch process URLs from file/stdin |
+| `iconhash fingerprints` | Browse/search fingerprint database |
+| `iconhash fingerprints update` | Update fingerprint database |
+| `iconhash server` | Start HTTP API server |
 
-Flags:
-  -b, --b64 string        Path to file containing base64 encoded favicon
-  -d, --debug             Enable debug output
-  -f, --file string       Path to favicon file
-      --fofa              Output in Fofa search format (default true)
-  -h, --help              Help for iconhash
-  -k, --skip-verify       Skip HTTPS certificate verification (default true)
-  -s, --shodan            Output in Shodan search format
-  -t, --timeout int       HTTP request timeout in seconds (default 10)
-      --uint32            Use uint32 format for hash output (default is int32)
-  -u, --url string        URL to download favicon from
-  -a, --user-agent string Custom User-Agent for HTTP requests
-  -v, --version           Version for iconhash
-```
+### Global Flags
 
-### Examples
+| Flag | Short | Description |
+|---|---|---|
+| `--engine` | `-e` | Format: `plain`, `fofa`, `shodan`, `censys`, `quake`, `zoomeye`, `hunter` |
+| `--uint32` | `-n` | Output uint32 instead of int32 |
+| `--insecure` | `-k` | Skip TLS verification |
+| `--timeout` | `-t` | HTTP timeout (default 30s) |
+| `--proxy` | | HTTP/SOCKS5 proxy URL |
+| `--debug` | `-d` | Enable debug output |
+| `--format` | | Output format: `text`, `json`, `csv` |
+| `--output` | `-o` | Output file path |
+| `--fingerprint-db` | | Custom fingerprint JSON database |
 
-#### Hash from URL with Debug Output
+See [SKILLS.md](./SKILLS.md) for complete documentation of every command and parameter.
 
-```bash
-iconhash -d -u https://www.example.com/favicon.ico
-```
+## Go SDK
 
-#### Hash from File with Shodan Format
-
-```bash
-iconhash -f favicon.ico --shodan --fofa=false
-```
-
-#### Hash from Base64 with Custom Timeout
+Use iconhash-skills as a Go library in your projects:
 
 ```bash
-iconhash -b64 encoded.txt -t 30
+go get github.com/cyberspacesec/iconhash-skills
 ```
 
-### API Server
+### Quick Start
 
-The iconhash tool includes an HTTP API server that allows you to calculate favicon hashes via HTTP requests. This is useful for integrating with other tools or services.
+```go
+package main
 
-#### Starting the Server
+import (
+    "context"
+    "fmt"
+    "github.com/cyberspacesec/iconhash-skills/pkg/hasher"
+    "github.com/cyberspacesec/iconhash-skills/pkg/fingerprint"
+    "github.com/cyberspacesec/iconhash-skills/pkg/util"
+)
 
-```bash
-# Start the server on default port (8080)
-iconhash server
+func main() {
+    // One-off hash with default options
+    hash, _ := hasher.HashURL(context.Background(), "https://example.com/favicon.ico")
+    fmt.Println("Hash:", hash)
 
-# Start the server on a custom port with debug output
-iconhash server -p 3000 -d
+    // Or create a custom hasher
+    h := hasher.New(&hasher.HashOptions{
+        InsecureSkipVerify: true,
+        RequestTimeout:     30 * time.Second,
+    })
 
-# Start the server with authentication
-iconhash server -a "your-secret-token"
-```
+    // Hash from various sources
+    hash, _ = h.HashFromURL(ctx, "https://example.com/favicon.ico")
+    hash, _ = h.HashFromFile("favicon.ico")
+    hash, _ = h.HashFromBytes(rawBytes)
+    hash, _ = h.HashFromBase64("base64data...")
+    hash, _ = h.HashFromReader(reader)
 
-#### API Server Options
+    // Discover + hash
+    results := h.DiscoverAndHash(ctx, "https://example.com", nil)
 
-```
-Server Flags:
-  -a, --auth-token string  Authentication token (empty for no auth)
-  -d, --debug              Enable debug logging
-  -H, --host string        Host address to bind to (default "127.0.0.1")
-  -k, --insecure           Skip TLS verification for outbound requests (default true)
-  -p, --port int           Port to listen on (default 8080)
-  -t, --timeout int        Timeout for outbound requests in seconds (default 10)
-```
+    // Full identification (discover + hash + fingerprint lookup)
+    db := fingerprint.DefaultDB()
+    results := h.Identify(ctx, "https://example.com", db, nil)
 
-#### API Endpoints
+    // Batch processing
+    urls := []string{"https://a.com/favicon.ico", "https://b.com/favicon.ico"}
+    results := h.BatchHashURLs(ctx, urls, 10) // 10 concurrent workers
 
-| Endpoint        | Method     | Description                              |
-|-----------------|------------|------------------------------------------|
-| `/health`       | GET        | Health check                             |
-| `/hash/url`     | GET, POST  | Calculate hash from URL                  |
-| `/hash/file`    | POST       | Calculate hash from uploaded file        |
-| `/hash/base64`  | POST       | Calculate hash from base64 encoded data  |
-| `/mcp`          | POST       | Model Context Protocol interaction       |
+    // Format for search engines
+    queries := util.FormatAll(hash) // map of all engines
+    formatted := util.FormatHash(hash, util.FormatFofa)
 
-#### Authentication
-
-If an authentication token is set, all requests (except `/health`) must include the token in one of these ways:
-
-* In the Authorization header: `Authorization: Bearer your-token`
-* As a query parameter: `?token=your-token`
-
-#### Example API Requests
-
-**Hash from URL (GET):**
-```bash
-curl -X GET "http://localhost:8080/hash/url?url=https://example.com/favicon.ico&format=shodan"
-```
-
-**Hash from URL (POST):**
-```bash
-curl -X POST -d "url=https://example.com/favicon.ico" http://localhost:8080/hash/url
-```
-
-**Hash from File:**
-```bash
-curl -X POST -F "file=@favicon.ico" http://localhost:8080/hash/file
-```
-
-**Hash from Base64:**
-```bash
-curl -X POST -d "data=$(base64 -i favicon.ico)" http://localhost:8080/hash/base64
-```
-
-**With Authentication:**
-```bash
-curl -X GET -H "Authorization: Bearer your-token" "http://localhost:8080/hash/url?url=https://example.com/favicon.ico"
-```
-
-### Model Context Protocol (MCP)
-
-The iconhash tool supports the Model Context Protocol, which allows integration with AI services. This enables conversational interaction with the tool to calculate favicon hashes.
-
-#### MCP Endpoint
-
-The MCP endpoint is available at `/mcp` and accepts POST requests with JSON payloads following the Model Context Protocol specification.
-
-#### Example MCP Request:
-
-```json
-{
-  "version": "1.0",
-  "protocol": "Model Context Protocol",
-  "context": {
-    "messages": [
-      {
-        "role": "user",
-        "content": "Calculate the hash for https://example.com/favicon.ico"
-      }
-    ]
-  }
+    // Fingerprint database operations
+    matches := db.Lookup(hash)
+    entries := db.LookupByCategory("CMS")
+    entries := db.LookupByTag("chinese")
+    entries := db.Filter(fingerprint.FilterOptions{Category: "Server", Tag: "java"})
 }
 ```
 
-#### Example MCP Response:
+### With Proxy
 
-```json
-{
-  "version": "1.0",
-  "protocol": "Model Context Protocol",
-  "message": {
-    "role": "assistant",
-    "content": "Favicon Hash for https://example.com/favicon.ico:\n\nPlain hash: -1424097501\nFofa format: icon_hash=\"-1424097501\"\nShodan format: http.favicon.hash:-1424097501"
-  },
-  "usage": {
-    "prompt_tokens": 14,
-    "completion_tokens": 14,
-    "total_tokens": 28,
-    "processing_time": 0.325,
-    "started_at": "2023-09-28T10:15:30Z",
-    "completed_at": "2023-09-28T10:15:30.325Z"
-  }
-}
+```go
+// Create options with proxy support
+opts, err := hasher.NewOptionsWithProxy("socks5://127.0.0.1:1080", 30*time.Second, true)
+h := hasher.New(opts)
 ```
 
-#### Using MCP with curl:
+### API Server SDK
 
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{
-  "version": "1.0",
-  "protocol": "Model Context Protocol",
-  "context": {
-    "messages": [
-      {
-        "role": "user",
-        "content": "Calculate the hash for https://example.com/favicon.ico"
-      }
-    ]
-  }
-}' http://localhost:8080/mcp
+```go
+import "github.com/cyberspacesec/iconhash-skills/pkg/api"
+
+config := api.DefaultConfig()
+config.Port = 9090
+config.AuthToken = "my-secret"
+server := api.NewServer(config)
+server.Start() // blocks until shutdown
 ```
 
-### Docker Usage
+### MCP Handler SDK
 
-#### Building the Docker Image Locally
+```go
+import "github.com/cyberspacesec/iconhash-skills/pkg/mcp"
 
-```bash
-# Build the Docker image
-git clone https://github.com/cyberspacesec/go-iconhash.git
-cd go-iconhash
-docker build -t iconhash:latest .
+handler := mcp.NewHandler(false)
+tools := handler.Tools() // List available tools
+result := handler.CallTool("iconhash_url", map[string]interface{}{
+    "url": "https://example.com/favicon.ico",
+})
 ```
 
-#### Using Docker for CLI Operations
+## API Server
 
 ```bash
-# Hash from URL
-docker run --rm iconhash:latest -u https://example.com/favicon.ico
+# Start server
+iconhash server -p 8080
 
-# Hash from local file (mounting a volume)
-docker run --rm -v $(pwd)/samples:/app/samples iconhash:latest -f /app/samples/favicon.ico
-
-# Using Shodan format
-docker run --rm iconhash:latest -s -u https://example.com/favicon.ico
-
-# Enable debug output
-docker run --rm iconhash:latest -d -u https://example.com/favicon.ico
+# With authentication
+iconhash server --auth-token secret123 -H 0.0.0.0
 ```
 
-#### Running the API Server with Docker
+| Endpoint | Method | Description |
+|---|---|---|
+| `/health` | GET | Health check |
+| `/hash/url` | GET, POST | Hash from URL |
+| `/hash/file` | POST | Hash from uploaded file |
+| `/hash/base64` | POST | Hash from base64 data |
+| `/hash/batch` | POST | Batch hash URLs |
+| `/hash/discover` | POST | Discover favicons |
+| `/lookup` | GET | Fingerprint lookup |
+| `/fingerprints` | GET | Fingerprint database |
+| `/mcp` | POST | Model Context Protocol |
+
+## Search Engine Formats
+
+| Engine | Format | Example |
+|---|---|---|
+| Fofa | `icon_hash="<hash>"` | `icon_hash="-305179312"` |
+| Shodan | `http.favicon.hash:<hash>` | `http.favicon.hash:-305179312` |
+| Censys | `services.http.response.favicons.md5_hash:<hash>` | |
+| Quake | `favicon.hash:"<hash>"` | |
+| ZoomEye | `iconhash:"<hash>"` | |
+| Hunter | `web.icon="<hash>"` | |
+
+## Docker Usage
 
 ```bash
-# Start the API server on port 8080
-docker run -d -p 8080:8080 --name iconhash-server iconhash:latest server -a 0.0.0.0 -p 8080
+# CLI
+docker run --rm cyberspacesec/iconhash:latest url https://example.com/favicon.ico
 
-# Start with authentication
-docker run -d -p 8080:8080 --name iconhash-server iconhash:latest server -a 0.0.0.0 -p 8080 --auth-token "your-secret-token"
+# API Server
+docker run -d -p 8080:8080 cyberspacesec/iconhash:latest server -H 0.0.0.0 -p 8080
 
-# Check the logs
-docker logs iconhash-server
-
-# Stop the server
-docker stop iconhash-server
-```
-
-#### Using Docker Compose
-
-The project includes a `docker-compose.yml` file that provides configurations for both server and CLI modes:
-
-```bash
-# Start the API server
+# With docker-compose
 docker-compose up server
-
-# Start the API server in detached mode
-docker-compose up -d server
-
-# Run a CLI command
-docker-compose run --rm cli -u https://example.com/favicon.ico
-
-# Run with a custom command
-docker-compose run --rm cli -f /app/samples/favicon.ico
-
-# Stop all containers
-docker-compose down
+docker-compose run --rm cli url https://example.com/favicon.ico
 ```
-
-### Website
-
-The project includes a React-based website for interacting with the IconHash tool. See the [website README](./website/README.md) for more information.
 
 ## Development
 
 ```bash
-# Build the binary
-make build
-
-# Run tests
-make test
-
-# Build Docker image
-make docker-build
-
-# Test with a URL
-make test-url
-
-# Test with a sample favicon
-make test-sample
+make build          # Lite build
+make build-full     # Full build (with fingerprints)
+make test           # Run tests
+make test-coverage  # Run tests with coverage report
+make docker-build   # Build Docker image
 ```
 
 ## Use Cases
 
-### Cybersecurity Reconnaissance
-
-The hash values generated by this tool can be used to search for websites with the same favicon in services like:
-
-- [FOFA](https://fofa.info/) - Use the Fofa output format: `icon_hash="-151231234"`
-- [Shodan](https://www.shodan.io/) - Use the Shodan output format: `http.favicon.hash:-151231234`
-
-### Integration with Other Tools
-
-With the API server, you can:
-- Integrate with web applications
-- Build automation scripts
-- Create middleware for processing favicons
-- Develop security scanning tools
-
-### AI Integration
-
-With the Model Context Protocol support, you can:
-- Create conversational interfaces to the tool
-- Integrate with AI assistants
-- Build intelligent security tools that process natural language
-- Automate reconnaissance tasks using conversational AI
-
-## Technical Background
-
-This tool calculates the MMH3 hash of a favicon icon by:
-
-1. Obtaining the favicon.ico file from a URL, local file, or base64 encoded data
-2. Encoding the data in base64 format with line breaks every 76 characters (as per RFC 822)
-3. Calculating the 32-bit MMH3 hash of the encoded data
-
-This approach is compatible with the hash calculation methods used by Fofa and Shodan search engines.
+- **Cybersecurity Reconnaissance**: Search for websites with matching favicons on Fofa, Shodan, etc.
+- **Asset Discovery**: Identify web services through their favicon fingerprints
+- **Automation**: Batch process URLs, integrate via API or SDK
+- **AI Integration**: Use MCP protocol for conversational interfaces
 
 ## License
 
-[MIT License](LICENSE) 
+[MIT License](LICENSE)

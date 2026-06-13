@@ -1,11 +1,12 @@
-module github.com/cyberspacesec/go-iconhash
+module github.com/cyberspacesec/iconhash-skills
 
-go 1.21
+go 1.25.0
 
 require (
 	github.com/fatih/color v1.18.0
 	github.com/spf13/cobra v1.9.1
 	github.com/twmb/murmur3 v1.1.8
+	golang.org/x/net v0.56.0
 )
 
 require (
@@ -13,5 +14,5 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
-	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
 )

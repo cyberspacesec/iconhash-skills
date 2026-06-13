@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/cyberspacesec/go-iconhash/pkg/util"
+	"github.com/cyberspacesec/iconhash-skills/pkg/util"
 )
 
 func TestHealthEndpoint(t *testing.T) {

@@ -1,0 +1,7015 @@
+[
+  {
+    "hash": "410106848",
+    "service": "Analytics Cloud",
+    "category": "BI",
+    "description": "Analytics Cloud (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "-267431135",
+    "service": "Kibana",
+    "category": "BI",
+    "description": "Kibana (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "-759754862",
+    "service": "Kibana",
+    "category": "BI",
+    "description": "Kibana (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "1668183286",
+    "service": "Kibana",
+    "category": "BI",
+    "description": "Kibana (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "-1200737715",
+    "service": "Kibana",
+    "category": "BI",
+    "description": "Kibana (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "75230260",
+    "service": "Kibana",
+    "category": "BI",
+    "description": "Kibana (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "2006734119",
+    "service": "Metabase",
+    "category": "BI",
+    "description": "Open-source business intelligence",
+    "tags": [
+      "java",
+      "analytics",
+      "dashboard"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1594377221",
+    "service": "Superset",
+    "category": "BI",
+    "description": "Apache Superset BI platform",
+    "tags": [
+      "python",
+      "analytics",
+      "dashboard"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1441956789",
+    "service": "Tableau",
+    "category": "BI",
+    "description": "Tableau (BI)",
+    "source": "community"
+  },
+  {
+    "hash": "1803985881",
+    "service": "Tableau",
+    "category": "BI",
+    "description": "Salesforce Tableau business intelligence",
+    "tags": [
+      "visualization",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1896753325",
+    "service": "Flink",
+    "category": "Big Data",
+    "description": "Apache Flink stream processing",
+    "tags": [
+      "java",
+      "streaming"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-923690202",
+    "service": "Hadoop",
+    "category": "Big Data",
+    "description": "Apache Hadoop distributed computing",
+    "tags": [
+      "java",
+      "distributed",
+      "hdfs"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1886732348",
+    "service": "Spark",
+    "category": "Big Data",
+    "description": "Apache Spark data processing",
+    "tags": [
+      "scala",
+      "analytics",
+      "streaming"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2042674979",
+    "service": "Alibaba",
+    "category": "Big Tech",
+    "description": "Alibaba/Alipay web service",
+    "tags": [
+      "chinese",
+      "ecommerce"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1227052603",
+    "service": "Alibaba Cloud",
+    "category": "Big Tech",
+    "description": "Alibaba Cloud (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "-1544605732",
+    "service": "Amazon",
+    "category": "Big Tech",
+    "description": "Amazon (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "716989053",
+    "service": "Amazon",
+    "category": "Big Tech",
+    "description": "Amazon (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "-1498185948",
+    "service": "Apple",
+    "category": "Big Tech",
+    "description": "Apple (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "1382324298",
+    "service": "Apple",
+    "category": "Big Tech",
+    "description": "Apple (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "1232159009",
+    "service": "Apple",
+    "category": "Big Tech",
+    "description": "Apple (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "1118684072",
+    "service": "Baidu",
+    "category": "Big Tech",
+    "description": "Baidu (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "-1507567067",
+    "service": "Baidu",
+    "category": "Big Tech",
+    "description": "Baidu search engine",
+    "tags": [
+      "baidu",
+      "chinese",
+      "search"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-2116540786",
+    "service": "Bet365",
+    "category": "Big Tech",
+    "description": "Bet365 (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "708578229",
+    "service": "Google",
+    "category": "Big Tech",
+    "description": "Google web service",
+    "tags": [
+      "google",
+      "search"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "902521196",
+    "service": "Netflix",
+    "category": "Big Tech",
+    "description": "Netflix (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810444",
+    "service": "Tencent",
+    "category": "Big Tech",
+    "description": "Tencent/QQ web service",
+    "tags": [
+      "chinese",
+      "qq"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "476528568",
+    "service": "Tesla",
+    "category": "Big Tech",
+    "description": "Tesla vehicle interface",
+    "tags": [
+      "tesla",
+      "iot",
+      "vehicle"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2125083197",
+    "service": "Windows Azure",
+    "category": "Big Tech",
+    "description": "Windows Azure (Big Tech)",
+    "source": "community"
+  },
+  {
+    "hash": "552519518",
+    "service": "Argo CD",
+    "category": "CI/CD",
+    "description": "Kubernetes GitOps continuous delivery",
+    "tags": [
+      "kubernetes",
+      "gitops"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1379982221",
+    "service": "Atlassian Bamboo",
+    "category": "CI/CD",
+    "description": "Atlassian continuous integration server",
+    "tags": [
+      "java",
+      "atlassian",
+      "ci"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1369277006",
+    "service": "Atlassian Crucible",
+    "category": "CI/CD",
+    "description": "Atlassian Crucible (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-1665357670",
+    "service": "Atlassian Fisheye",
+    "category": "CI/CD",
+    "description": "Atlassian Fisheye (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-219625874",
+    "service": "Bonobo Git Server",
+    "category": "CI/CD",
+    "description": "Bonobo Git Server (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-276759139",
+    "service": "Chef Automate",
+    "category": "CI/CD",
+    "description": "Chef Automate (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-695893916",
+    "service": "Drone CI",
+    "category": "CI/CD",
+    "description": "Container-native CI platform",
+    "tags": [
+      "go",
+      "container",
+      "ci"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "211022842",
+    "service": "Flux CD",
+    "category": "CI/CD",
+    "description": "Kubernetes GitOps toolkit",
+    "tags": [
+      "kubernetes",
+      "gitops"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "516963061",
+    "service": "GitLab",
+    "category": "CI/CD",
+    "description": "GitLab (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "1278323681",
+    "service": "GitLab",
+    "category": "CI/CD",
+    "description": "GitLab (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "1265477436",
+    "service": "GitLab CE/EE",
+    "category": "CI/CD",
+    "description": "Self-hosted Git platform with CI/CD",
+    "tags": [
+      "ruby",
+      "git",
+      "devops"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1969970750",
+    "service": "Gitea",
+    "category": "CI/CD",
+    "description": "Gitea (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "1923129182",
+    "service": "Gitea",
+    "category": "CI/CD",
+    "description": "Lightweight self-hosted Git service",
+    "tags": [
+      "go",
+      "git",
+      "lightweight"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "917966895",
+    "service": "Gogs",
+    "category": "CI/CD",
+    "description": "Self-hosted Git service in Go",
+    "tags": [
+      "go",
+      "git",
+      "lightweight"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "81586312",
+    "service": "Jenkins",
+    "category": "CI/CD",
+    "description": "Open-source automation server",
+    "tags": [
+      "java",
+      "automation"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1944119648",
+    "service": "JetBrains TeamCity",
+    "category": "CI/CD",
+    "description": "JetBrains CI/CD server",
+    "tags": [
+      "java",
+      "ci",
+      "jetbrains"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1023469568",
+    "service": "MeterSphere",
+    "category": "CI/CD",
+    "description": "MeterSphere (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "1323738809",
+    "service": "Nexus Repository Manager",
+    "category": "CI/CD",
+    "description": "Nexus Repository Manager (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "1485257654",
+    "service": "SonarQube",
+    "category": "CI/CD",
+    "description": "SonarQube (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-1546574541",
+    "service": "Sonatype Nexus",
+    "category": "CI/CD",
+    "description": "Sonatype Nexus (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "706602230",
+    "service": "VisualSVN Server",
+    "category": "CI/CD",
+    "description": "VisualSVN Server (CI/CD)",
+    "source": "community"
+  },
+  {
+    "hash": "-1275148624",
+    "service": "Accrisoft",
+    "category": "CMS",
+    "description": "Accrisoft (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "1333537166",
+    "service": "Alfresco",
+    "category": "CMS",
+    "description": "Alfresco (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1378182799",
+    "service": "Archivematica",
+    "category": "CMS",
+    "description": "Archivematica (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-305179312",
+    "service": "Atlassian Confluence",
+    "category": "CMS",
+    "description": "Enterprise wiki and collaboration platform",
+    "tags": [
+      "java",
+      "wiki",
+      "enterprise",
+      "atlassian"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1465479343",
+    "service": "DNN CMS",
+    "category": "CMS",
+    "description": "DNN CMS (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-528543897",
+    "service": "DedeCMS",
+    "category": "CMS",
+    "description": "Widely used Chinese CMS (织梦CMS)",
+    "tags": [
+      "php",
+      "chinese",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-505448917",
+    "service": "Discuz!",
+    "category": "CMS",
+    "description": "Discuz! (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-748565678",
+    "service": "Dreamer CMS",
+    "category": "CMS",
+    "description": "Dreamer CMS (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-655013097",
+    "service": "Drupal",
+    "category": "CMS",
+    "description": "Open-source CMS for enterprise sites",
+    "tags": [
+      "php",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1174841451",
+    "service": "Drupal",
+    "category": "CMS",
+    "description": "Drupal (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-167656799",
+    "service": "Drupal",
+    "category": "CMS",
+    "description": "Drupal (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1961736892",
+    "service": "DzzOffice",
+    "category": "CMS",
+    "description": "DzzOffice (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1998350293",
+    "service": "EmpireCMS",
+    "category": "CMS",
+    "description": "Chinese enterprise CMS (帝国CMS)",
+    "tags": [
+      "php",
+      "chinese",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "175178466",
+    "service": "Ghost",
+    "category": "CMS",
+    "description": "Modern publishing platform",
+    "tags": [
+      "nodejs",
+      "blog"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1015932800",
+    "service": "Ghost CMS",
+    "category": "CMS",
+    "description": "Ghost CMS (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1231681737",
+    "service": "Ghost CMS",
+    "category": "CMS",
+    "description": "Ghost CMS (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "603314",
+    "service": "Hexo",
+    "category": "CMS",
+    "description": "Static site blog framework",
+    "tags": [
+      "nodejs",
+      "blog",
+      "static"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "926802612",
+    "service": "Hugo",
+    "category": "CMS",
+    "description": "Static site generator built in Go",
+    "tags": [
+      "go",
+      "blog",
+      "static"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1950415971",
+    "service": "Joomla",
+    "category": "CMS",
+    "description": "Joomla (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "366524387",
+    "service": "Joomla",
+    "category": "CMS",
+    "description": "Joomla (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "1627330242",
+    "service": "Joomla",
+    "category": "CMS",
+    "description": "Joomla (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "829921184",
+    "service": "Joomla",
+    "category": "CMS",
+    "description": "Popular open-source CMS",
+    "tags": [
+      "php",
+      "popular"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1755359749",
+    "service": "Laravel",
+    "category": "CMS",
+    "description": "Popular PHP framework",
+    "tags": [
+      "php",
+      "framework"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "129457226",
+    "service": "Liferay Portal",
+    "category": "CMS",
+    "description": "Liferay Portal (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "981670006",
+    "service": "Magento CMS",
+    "category": "CMS",
+    "description": "Adobe Magento e-commerce CMS",
+    "tags": [
+      "php",
+      "ecommerce"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1273982002",
+    "service": "Mautic",
+    "category": "CMS",
+    "description": "Mautic (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "2099342476",
+    "service": "PKP OpenJournalSystems",
+    "category": "CMS",
+    "description": "PKP OpenJournalSystems (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1893992090",
+    "service": "PbootCMS",
+    "category": "CMS",
+    "description": "Chinese enterprise CMS (PbootCMS)",
+    "tags": [
+      "php",
+      "chinese"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-2147483648",
+    "service": "SharePoint",
+    "category": "CMS",
+    "description": "Microsoft SharePoint collaboration platform",
+    "tags": [
+      "microsoft",
+      "enterprise",
+      "collaboration"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1668183994",
+    "service": "SiteServer CMS",
+    "category": "CMS",
+    "description": "Chinese .NET CMS (SiteServer CMS)",
+    "tags": [
+      "dotnet",
+      "chinese",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-702384832",
+    "service": "TCN",
+    "category": "CMS",
+    "description": "TCN (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "1648521158",
+    "service": "ThinkPHP",
+    "category": "CMS",
+    "description": "Popular Chinese PHP framework",
+    "tags": [
+      "php",
+      "framework",
+      "chinese"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1131756389",
+    "service": "Typecho",
+    "category": "CMS",
+    "description": "Lightweight Chinese blog CMS",
+    "tags": [
+      "php",
+      "blog",
+      "chinese"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1524374260",
+    "service": "WordPress",
+    "category": "CMS",
+    "description": "Most popular open-source CMS worldwide",
+    "tags": [
+      "php",
+      "blog",
+      "popular"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "191654058",
+    "service": "WordPress Under Construction",
+    "category": "CMS",
+    "description": "WordPress Under Construction (CMS)",
+    "source": "community"
+  },
+  {
+    "hash": "2119138714",
+    "service": "Z-Blog",
+    "category": "CMS",
+    "description": "Chinese blog CMS (Z-BlogPHP)",
+    "tags": [
+      "php",
+      "blog",
+      "chinese"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1876585825",
+    "service": "ALIBI NVR",
+    "category": "Camera",
+    "description": "ALIBI NVR (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1616143106",
+    "service": "AXIS Network Camera",
+    "category": "Camera",
+    "description": "AXIS IP camera",
+    "tags": [
+      "axis",
+      "camera",
+      "iot",
+      "surveillance"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1318124267",
+    "service": "Avigilon",
+    "category": "Camera",
+    "description": "Avigilon (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-520888198",
+    "service": "Blue Iris Webcam",
+    "category": "Camera",
+    "description": "Blue Iris Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1702769256",
+    "service": "Bosch Security Camera",
+    "category": "Camera",
+    "description": "Bosch Security Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-355305208",
+    "service": "D-Link Camera",
+    "category": "Camera",
+    "description": "D-Link Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1897829998",
+    "service": "D-Link Camera",
+    "category": "Camera",
+    "description": "D-Link Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1144925962",
+    "service": "D-Link Webcam",
+    "category": "Camera",
+    "description": "D-Link Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1354933624",
+    "service": "D-Link Webcam",
+    "category": "Camera",
+    "description": "D-Link Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "31972968",
+    "service": "D-Link Webcam",
+    "category": "Camera",
+    "description": "D-Link Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1221759509",
+    "service": "D-Link Webcam",
+    "category": "Camera",
+    "description": "D-Link Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-560297467",
+    "service": "DVR",
+    "category": "Camera",
+    "description": "DVR (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1281253102",
+    "service": "Dahua DVR",
+    "category": "Camera",
+    "description": "Dahua DVR (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1466785234",
+    "service": "Dahua DVR/NVR",
+    "category": "Camera",
+    "description": "Dahua DVR/NVR (大华硬盘录像机)",
+    "tags": [
+      "chinese",
+      "dvr",
+      "iot",
+      "surveillance"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "2019488876",
+    "service": "Dahua IP Camera",
+    "category": "Camera",
+    "description": "Dahua IP camera (大华)",
+    "tags": [
+      "chinese",
+      "camera",
+      "iot",
+      "surveillance"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "833190513",
+    "service": "Dahua IP Camera",
+    "category": "Camera",
+    "description": "Dahua IP Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "603314722",
+    "service": "Dell iDRAC",
+    "category": "Camera",
+    "description": "Dell iDRAC server management",
+    "tags": [
+      "dell",
+      "server",
+      "management"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "476213314",
+    "service": "Exacq",
+    "category": "Camera",
+    "description": "Exacq (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1834435530",
+    "service": "Foscam Camera",
+    "category": "Camera",
+    "description": "Foscam IP camera",
+    "tags": [
+      "camera",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "905744673",
+    "service": "HP iLO/iPV",
+    "category": "Camera",
+    "description": "HP iLO server management",
+    "tags": [
+      "hp",
+      "server",
+      "management"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-873627015",
+    "service": "HeroSpeed NVR/IPC",
+    "category": "Camera",
+    "description": "HeroSpeed NVR/IPC (雄迈)",
+    "tags": [
+      "camera",
+      "dvr",
+      "chinese"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-655013097",
+    "service": "Hikvision Camera",
+    "category": "Camera",
+    "description": "Hikvision IP camera (海康威视)",
+    "tags": [
+      "chinese",
+      "camera",
+      "iot",
+      "surveillance"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "999357577",
+    "service": "Hikvision IP Camera",
+    "category": "Camera",
+    "description": "Hikvision IP Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-808437027",
+    "service": "Hikvision iSecure Center",
+    "category": "Camera",
+    "description": "Hikvision iSecure Center (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1748763891",
+    "service": "INSTAR HD IP Camera",
+    "category": "Camera",
+    "description": "INSTAR HD IP Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1169314298",
+    "service": "INSTAR IP Camera",
+    "category": "Camera",
+    "description": "INSTAR IP Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "492290497",
+    "service": "IP Camera Generic",
+    "category": "Camera",
+    "description": "IP Camera Generic (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "90066852",
+    "service": "JAWS Web Server",
+    "category": "Camera",
+    "description": "JAWS web server (IP camera)",
+    "tags": [
+      "camera",
+      "iot",
+      "embedded"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "768231242",
+    "service": "JAWS Web Server",
+    "category": "Camera",
+    "description": "JAWS Web Server (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1351901211",
+    "service": "Luma Surveillance",
+    "category": "Camera",
+    "description": "Luma Surveillance (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-299324825",
+    "service": "Lupus Electronics XT",
+    "category": "Camera",
+    "description": "Lupus Electronics XT (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "661332347",
+    "service": "MOBOTIX Camera",
+    "category": "Camera",
+    "description": "MOBOTIX Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-923693877",
+    "service": "MotionEye Camera",
+    "category": "Camera",
+    "description": "MotionEye Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-374235895",
+    "service": "Ossia Provision SR Webcam",
+    "category": "Camera",
+    "description": "Ossia Provision SR Webcam (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-38705358",
+    "service": "Reolink",
+    "category": "Camera",
+    "description": "Reolink (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-10974981",
+    "service": "Shinobi CCTV",
+    "category": "Camera",
+    "description": "Shinobi CCTV (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1059329877",
+    "service": "Tecvoz",
+    "category": "Camera",
+    "description": "Tecvoz (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1452159623",
+    "service": "Tecvoz",
+    "category": "Camera",
+    "description": "Tecvoz (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "512590457",
+    "service": "Trendnet IP Camera",
+    "category": "Camera",
+    "description": "Trendnet IP Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "768816037",
+    "service": "UniFi Video Controller",
+    "category": "Camera",
+    "description": "UniFi Video Controller (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "603314722",
+    "service": "Uniview Camera",
+    "category": "Camera",
+    "description": "Uniview IP camera (宇视)",
+    "tags": [
+      "chinese",
+      "camera",
+      "iot",
+      "surveillance"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1654229048",
+    "service": "Vivotek Camera",
+    "category": "Camera",
+    "description": "Vivotek Camera (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1648521158",
+    "service": "Xiongmai DVR",
+    "category": "Camera",
+    "description": "Xiongmai DVR/NVR (雄迈)",
+    "tags": [
+      "chinese",
+      "dvr",
+      "iot"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1782271534",
+    "service": "truVision NVR",
+    "category": "Camera",
+    "description": "truVision NVR (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1093172228",
+    "service": "truVision NVR",
+    "category": "Camera",
+    "description": "truVision NVR (Camera)",
+    "tags": [
+      "iot",
+      "surveillance"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2031176907",
+    "service": "Codecov",
+    "category": "Code Quality",
+    "description": "Code coverage service",
+    "tags": [
+      "coverage",
+      "saas"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1351214924",
+    "service": "SonarQube",
+    "category": "Code Quality",
+    "description": "Code quality and security platform",
+    "tags": [
+      "java",
+      "static-analysis",
+      "devops"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "970132176",
+    "service": "3CX Phone System",
+    "category": "Communication",
+    "description": "3CX VoIP PBX phone system",
+    "tags": [
+      "voip",
+      "pbx",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "2068154487",
+    "service": "Digium Switchvox",
+    "category": "Communication",
+    "description": "Digium Switchvox (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "1953726032",
+    "service": "Discourse",
+    "category": "Communication",
+    "description": "Modern forum/discussion platform",
+    "tags": [
+      "ruby",
+      "forum"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "671221099",
+    "service": "Innovaphone",
+    "category": "Communication",
+    "description": "Innovaphone (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-637931821",
+    "service": "LiveUC Video Conference",
+    "category": "Communication",
+    "description": "LiveUC Video Conference (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-1269979934",
+    "service": "Mastodon Instance",
+    "category": "Communication",
+    "description": "Mastodon Instance (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-1734150408",
+    "service": "Mattermost",
+    "category": "Communication",
+    "description": "Self-hosted Slack alternative",
+    "tags": [
+      "go",
+      "chat",
+      "self-hosted"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "938616453",
+    "service": "Mersive Solstice",
+    "category": "Communication",
+    "description": "Mersive Solstice (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-1922044295",
+    "service": "Mitel MiCollab",
+    "category": "Communication",
+    "description": "Mitel MiCollab (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "1211608009",
+    "service": "Openfire Admin Console",
+    "category": "Communication",
+    "description": "Openfire Admin Console (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "77044418",
+    "service": "Polycom",
+    "category": "Communication",
+    "description": "Polycom (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-1775553655",
+    "service": "Polycom Unified Console",
+    "category": "Communication",
+    "description": "Polycom Unified Console (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "225632504",
+    "service": "Rocket.Chat",
+    "category": "Communication",
+    "description": "Open-source chat platform",
+    "tags": [
+      "nodejs",
+      "chat",
+      "open-source"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-332324409",
+    "service": "STARFACE VoIP",
+    "category": "Communication",
+    "description": "STARFACE VoIP (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-1807411396",
+    "service": "Skype",
+    "category": "Communication",
+    "description": "Skype (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-43161126",
+    "service": "Slack",
+    "category": "Communication",
+    "description": "Slack (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "99395752",
+    "service": "Slack",
+    "category": "Communication",
+    "description": "Enterprise messaging platform",
+    "tags": [
+      "chat",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "97604680",
+    "service": "Tandberg",
+    "category": "Communication",
+    "description": "Tandberg (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-195508437",
+    "service": "iPECS",
+    "category": "Communication",
+    "description": "iPECS (Communication)",
+    "source": "community"
+  },
+  {
+    "hash": "-631094502",
+    "service": "Docker Registry",
+    "category": "Container",
+    "description": "Docker image registry",
+    "tags": [
+      "container",
+      "registry"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1747323616",
+    "service": "Harbor",
+    "category": "Container",
+    "description": "Enterprise container registry",
+    "tags": [
+      "container",
+      "registry",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1585996201",
+    "service": "Kubernetes",
+    "category": "Container",
+    "description": "Container orchestration platform",
+    "tags": [
+      "container",
+      "orchestration",
+      "cloud-native"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-124318229",
+    "service": "Portainer",
+    "category": "Container",
+    "description": "Docker/Kubernetes management UI",
+    "tags": [
+      "container",
+      "docker",
+      "management"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1322582968",
+    "service": "Rancher",
+    "category": "Container",
+    "description": "Kubernetes management platform",
+    "tags": [
+      "kubernetes",
+      "management"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "2035916251",
+    "service": "Traefik",
+    "category": "Container",
+    "description": "Cloud-native application proxy",
+    "tags": [
+      "go",
+      "proxy",
+      "cloud-native"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1417929751",
+    "service": "Dashy",
+    "category": "Dashboard",
+    "description": "Self-hosted dashboard",
+    "tags": [
+      "vue",
+      "dashboard",
+      "self-hosted"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1557186200",
+    "service": "Heimdall",
+    "category": "Dashboard",
+    "description": "Application dashboard",
+    "tags": [
+      "dashboard",
+      "navigation"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1732759680",
+    "service": "Homepage",
+    "category": "Dashboard",
+    "description": "Docker homepage dashboard",
+    "tags": [
+      "docker",
+      "dashboard"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "199682768",
+    "service": "Homer",
+    "category": "Dashboard",
+    "description": "Static dashboard homepage",
+    "tags": [
+      "dashboard",
+      "navigation"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1424295984",
+    "service": "Organizr",
+    "category": "Dashboard",
+    "description": "PHP dashboard for services",
+    "tags": [
+      "php",
+      "dashboard"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-895963602",
+    "service": "Jupyter Notebook",
+    "category": "Data Science",
+    "description": "Interactive computing notebook",
+    "tags": [
+      "python",
+      "notebook"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1248917303",
+    "service": "JupyterHub",
+    "category": "Data Science",
+    "description": "JupyterHub (Data Science)",
+    "source": "community"
+  },
+  {
+    "hash": "628535358",
+    "service": "RStudio",
+    "category": "Data Science",
+    "description": "R development environment",
+    "tags": [
+      "r",
+      "ide"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-669688379",
+    "service": "Streamlit",
+    "category": "Data Science",
+    "description": "Python data app framework",
+    "tags": [
+      "python",
+      "dashboard"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "509631788",
+    "service": "Adminer",
+    "category": "Database",
+    "description": "Lightweight database admin tool",
+    "tags": [
+      "php",
+      "database",
+      "admin"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "817720459",
+    "service": "CockroachDB",
+    "category": "Database",
+    "description": "Distributed SQL database",
+    "tags": [
+      "go",
+      "sql",
+      "distributed"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1961046099",
+    "service": "Dgraph Ratel",
+    "category": "Database",
+    "description": "Dgraph Ratel (Database)",
+    "source": "community"
+  },
+  {
+    "hash": "1552860581",
+    "service": "Elastic Database",
+    "category": "Database",
+    "description": "Elastic Database (Database)",
+    "source": "community"
+  },
+  {
+    "hash": "-525659379",
+    "service": "H2 Database Console",
+    "category": "Database",
+    "description": "H2 Database Console (Database)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810444",
+    "service": "InfluxDB",
+    "category": "Database",
+    "description": "Time-series database",
+    "tags": [
+      "go",
+      "time-series",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1768726119",
+    "service": "Redis Commander",
+    "category": "Database",
+    "description": "Redis web management tool",
+    "tags": [
+      "nodejs",
+      "redis",
+      "admin"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1530681113",
+    "service": "pgAdmin",
+    "category": "Database",
+    "description": "PostgreSQL admin tool",
+    "tags": [
+      "python",
+      "postgresql",
+      "admin"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1010568750",
+    "service": "phpMyAdmin",
+    "category": "Database",
+    "description": "MySQL web administration",
+    "tags": [
+      "php",
+      "mysql",
+      "admin"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-476231906",
+    "service": "phpMyAdmin (Alt)",
+    "category": "Database",
+    "description": "phpMyAdmin alternate version",
+    "tags": [
+      "php",
+      "mysql",
+      "admin"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "492941040",
+    "service": "B2Bbuilder",
+    "category": "E-Commerce",
+    "description": "B2Bbuilder (E-Commerce)",
+    "source": "community"
+  },
+  {
+    "hash": "-38580010",
+    "service": "Magento",
+    "category": "E-Commerce",
+    "description": "Magento (E-Commerce)",
+    "source": "community"
+  },
+  {
+    "hash": "1507098592",
+    "service": "Magento",
+    "category": "E-Commerce",
+    "description": "Adobe e-commerce platform",
+    "tags": [
+      "php",
+      "enterprise",
+      "shopping"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1262005928",
+    "service": "OpenCart",
+    "category": "E-Commerce",
+    "description": "Open-source e-commerce platform",
+    "tags": [
+      "php",
+      "shopping"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "309020573",
+    "service": "PayPal",
+    "category": "E-Commerce",
+    "description": "PayPal payment page",
+    "tags": [
+      "payment",
+      "saas"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1436966696",
+    "service": "PrestaShop",
+    "category": "E-Commerce",
+    "description": "Open-source e-commerce",
+    "tags": [
+      "php",
+      "shopping"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "766842226",
+    "service": "Shopify",
+    "category": "E-Commerce",
+    "description": "Cloud e-commerce platform",
+    "tags": [
+      "saas",
+      "shopping"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-419786525",
+    "service": "WooCommerce",
+    "category": "E-Commerce",
+    "description": "WordPress e-commerce plugin",
+    "tags": [
+      "wordpress",
+      "php",
+      "shopping"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-617743584",
+    "service": "Odoo",
+    "category": "Enterprise ERP",
+    "description": "Odoo (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "1966198264",
+    "service": "OpenERP/Odoo",
+    "category": "Enterprise ERP",
+    "description": "OpenERP/Odoo (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "1347937389",
+    "service": "SAP Conversational AI",
+    "category": "Enterprise ERP",
+    "description": "SAP Conversational AI (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "1755359749",
+    "service": "SAP Fiori",
+    "category": "Enterprise ERP",
+    "description": "SAP Fiori launchpad",
+    "tags": [
+      "sap",
+      "erp",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1967743928",
+    "service": "SAP ID Service",
+    "category": "Enterprise ERP",
+    "description": "SAP ID Service (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "-266008933",
+    "service": "SAP NetWeaver",
+    "category": "Enterprise ERP",
+    "description": "SAP NetWeaver application server",
+    "tags": [
+      "sap",
+      "erp",
+      "enterprise",
+      "java"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1433417005",
+    "service": "Salesforce",
+    "category": "Enterprise ERP",
+    "description": "Salesforce (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "86919334",
+    "service": "ServiceNow",
+    "category": "Enterprise ERP",
+    "description": "ServiceNow (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "628535358",
+    "service": "ServiceNow",
+    "category": "Enterprise ERP",
+    "description": "ServiceNow IT service management",
+    "tags": [
+      "saas",
+      "it-service",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1701804003",
+    "service": "ServiceNow Portal",
+    "category": "Enterprise ERP",
+    "description": "ServiceNow Portal (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "-459291760",
+    "service": "Workday",
+    "category": "Enterprise ERP",
+    "description": "Workday (Enterprise ERP)",
+    "source": "community"
+  },
+  {
+    "hash": "-1022206565",
+    "service": "CrushFTP",
+    "category": "File Transfer",
+    "description": "CrushFTP (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "731374291",
+    "service": "HFS HTTP File Server",
+    "category": "File Transfer",
+    "description": "HFS HTTP File Server (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "2124459909",
+    "service": "HFS HTTP File Server",
+    "category": "File Transfer",
+    "description": "HFS HTTP File Server (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "541087742",
+    "service": "LiquidFiles",
+    "category": "File Transfer",
+    "description": "LiquidFiles (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "-1528414776",
+    "service": "Rumpus",
+    "category": "File Transfer",
+    "description": "Rumpus (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "812385209",
+    "service": "SolarWinds Serv-U FTP",
+    "category": "File Transfer",
+    "description": "SolarWinds Serv-U FTP (File Transfer)",
+    "source": "community"
+  },
+  {
+    "hash": "-1050987963",
+    "service": "Check Point",
+    "category": "Firewall",
+    "description": "Check Point firewall",
+    "tags": [
+      "checkpoint",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "794809961",
+    "service": "CheckPoint",
+    "category": "Firewall",
+    "description": "CheckPoint (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1822098181",
+    "service": "CheckPoint Gaia",
+    "category": "Firewall",
+    "description": "CheckPoint Gaia (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-116612539",
+    "service": "Citrix NetScaler Gateway",
+    "category": "Firewall",
+    "description": "Citrix NetScaler/ADC VPN gateway",
+    "tags": [
+      "citrix",
+      "vpn",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1462981117",
+    "service": "Cyberoam",
+    "category": "Firewall",
+    "description": "Cyberoam (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "363324987",
+    "service": "Dell SonicWALL",
+    "category": "Firewall",
+    "description": "Dell SonicWALL (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1225484776",
+    "service": "Endian Firewall",
+    "category": "Firewall",
+    "description": "Endian Firewall (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "878647854",
+    "service": "F5 BIG-IP",
+    "category": "Firewall",
+    "description": "F5 BIG-IP (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-335242539",
+    "service": "F5 BIG-IP",
+    "category": "Firewall",
+    "description": "F5 BIG-IP ADC/firewall",
+    "tags": [
+      "f5",
+      "load-balancer",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-800551065",
+    "service": "Fortinet EMS",
+    "category": "Firewall",
+    "description": "Fortinet Endpoint Management Server",
+    "tags": [
+      "fortinet",
+      "endpoint"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "467483715",
+    "service": "Fortinet FortiADC",
+    "category": "Firewall",
+    "description": "Fortinet FortiADC (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "945408572",
+    "service": "Fortinet FortiGate",
+    "category": "Firewall",
+    "description": "Fortinet FortiGate firewall",
+    "tags": [
+      "fortinet",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1439222863",
+    "service": "Ivanti Connect Secure",
+    "category": "Firewall",
+    "description": "Ivanti (Pulse Secure) VPN",
+    "tags": [
+      "ivanti",
+      "vpn",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-466504476",
+    "service": "Kerio Control Firewall",
+    "category": "Firewall",
+    "description": "Kerio Control Firewall (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-631002664",
+    "service": "Kerio Control Firewall",
+    "category": "Firewall",
+    "description": "Kerio Control Firewall (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1929912510",
+    "service": "NETASQ/Stormshield",
+    "category": "Firewall",
+    "description": "NETASQ/Stormshield (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1648521158",
+    "service": "NSFOCUS WAF",
+    "category": "Firewall",
+    "description": "NSFOCUS WAF (绿盟WAF)",
+    "tags": [
+      "chinese",
+      "waf",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "873381299",
+    "service": "Palo Alto Firewall",
+    "category": "Firewall",
+    "description": "Palo Alto Networks firewall",
+    "tags": [
+      "palo-alto",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "602431586",
+    "service": "Palo Alto Firewall",
+    "category": "Firewall",
+    "description": "Palo Alto Firewall (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-631559155",
+    "service": "Palo Alto GlobalProtect",
+    "category": "Firewall",
+    "description": "Palo Alto GlobalProtect VPN",
+    "tags": [
+      "palo-alto",
+      "vpn"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-318947884",
+    "service": "Palo Alto Networks",
+    "category": "Firewall",
+    "description": "Palo Alto Networks (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1926484046",
+    "service": "Sangfor",
+    "category": "Firewall",
+    "description": "Sangfor (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1810847295",
+    "service": "Sangfor Delivery Controller",
+    "category": "Firewall",
+    "description": "Sangfor Delivery Controller (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "123821839",
+    "service": "Sangfor Firewall",
+    "category": "Firewall",
+    "description": "Sangfor Firewall (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1051648103",
+    "service": "Securepoint",
+    "category": "Firewall",
+    "description": "Securepoint (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "631108382",
+    "service": "SonicWall",
+    "category": "Firewall",
+    "description": "SonicWall firewall/UTM",
+    "tags": [
+      "sonicwall",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1601194732",
+    "service": "Sophos/Cyberoam",
+    "category": "Firewall",
+    "description": "Sophos/Cyberoam firewall",
+    "tags": [
+      "sophos",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2019013898",
+    "service": "Topsec Device",
+    "category": "Firewall",
+    "description": "Topsec Device (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1893992090",
+    "service": "Topsec WAF",
+    "category": "Firewall",
+    "description": "Topsec WAF (天融信WAF)",
+    "tags": [
+      "chinese",
+      "waf",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1131689409",
+    "service": "UTM Russia",
+    "category": "Firewall",
+    "description": "UTM Russia (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1103599349",
+    "service": "Untangle",
+    "category": "Firewall",
+    "description": "Untangle (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "45180380",
+    "service": "VMware ESXi",
+    "category": "Firewall",
+    "description": "VMware ESXi host client",
+    "tags": [
+      "vmware",
+      "hypervisor",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "15831193",
+    "service": "WatchGuard",
+    "category": "Firewall",
+    "description": "WatchGuard (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-569941107",
+    "service": "WatchGuard Fireware",
+    "category": "Firewall",
+    "description": "WatchGuard Fireware (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2113497004",
+    "service": "WiJungle",
+    "category": "Firewall",
+    "description": "WiJungle (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "910523681",
+    "service": "WiseGrid ADN",
+    "category": "Firewall",
+    "description": "WiseGrid ADN (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-484708885",
+    "service": "Zyxel ZyWALL",
+    "category": "Firewall",
+    "description": "Zyxel ZyWALL (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-440644339",
+    "service": "Zyxel ZyWALL",
+    "category": "Firewall",
+    "description": "Zyxel ZyWALL (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1015545776",
+    "service": "pfSense",
+    "category": "Firewall",
+    "description": "pfSense (Firewall)",
+    "tags": [
+      "security"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1772087922",
+    "service": "ASP.NET",
+    "category": "Framework",
+    "description": "ASP.NET (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-183163807",
+    "service": "Ace Admin",
+    "category": "Framework",
+    "description": "Ace Admin (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1255347784",
+    "service": "Angular IO",
+    "category": "Framework",
+    "description": "Angular IO (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-632070065",
+    "service": "Apache Haus",
+    "category": "Framework",
+    "description": "Apache Haus (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1607644090",
+    "service": "Bitnami",
+    "category": "Framework",
+    "description": "Bitnami (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "1169183049",
+    "service": "BoaServer",
+    "category": "Framework",
+    "description": "BoaServer (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "980692677",
+    "service": "CakePHP",
+    "category": "Framework",
+    "description": "CakePHP (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-693082529",
+    "service": "Django",
+    "category": "Framework",
+    "description": "Python web framework",
+    "tags": [
+      "python",
+      "backend"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1067420240",
+    "service": "GraphQL",
+    "category": "Framework",
+    "description": "GraphQL (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-656811182",
+    "service": "JBoss",
+    "category": "Framework",
+    "description": "JBoss (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "937999361",
+    "service": "JBoss AS 7",
+    "category": "Framework",
+    "description": "JBoss AS 7 (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810444",
+    "service": "JeecgBoot",
+    "category": "Framework",
+    "description": "Chinese Java low-code platform",
+    "tags": [
+      "java",
+      "chinese",
+      "lowcode",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-629047854",
+    "service": "Jetty 404",
+    "category": "Framework",
+    "description": "Jetty 404 (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "784872924",
+    "service": "Lucee!",
+    "category": "Framework",
+    "description": "Lucee! (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "1913538826",
+    "service": "Material Dashboard",
+    "category": "Framework",
+    "description": "Material Dashboard (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1414475558",
+    "service": "Microsoft IIS",
+    "category": "Framework",
+    "description": "Microsoft IIS (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-642094870",
+    "service": "Next.js",
+    "category": "Framework",
+    "description": "React SSR framework by Vercel",
+    "tags": [
+      "javascript",
+      "react",
+      "ssr"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-676077969",
+    "service": "Niagara Web Server",
+    "category": "Framework",
+    "description": "Niagara Web Server (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "1991562061",
+    "service": "Niagara Web Server/Tridium",
+    "category": "Framework",
+    "description": "Niagara Web Server/Tridium (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1442789563",
+    "service": "NuxtJS",
+    "category": "Framework",
+    "description": "NuxtJS (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-2009722838",
+    "service": "React",
+    "category": "Framework",
+    "description": "Frontend UI library by Meta",
+    "tags": [
+      "javascript",
+      "frontend"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "72005642",
+    "service": "RemObjects SDK",
+    "category": "Framework",
+    "description": "RemObjects SDK (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-2042674979",
+    "service": "Ruoyi",
+    "category": "Framework",
+    "description": "Chinese Java admin framework (若依)",
+    "tags": [
+      "java",
+      "chinese",
+      "admin",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "552597979",
+    "service": "Sails",
+    "category": "Framework",
+    "description": "Sails (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "116323821",
+    "service": "Spring Boot",
+    "category": "Framework",
+    "description": "Java enterprise application framework",
+    "tags": [
+      "java",
+      "backend",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "882208493",
+    "service": "Vue.js",
+    "category": "Framework",
+    "description": "Progressive JavaScript framework",
+    "tags": [
+      "javascript",
+      "frontend"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "929825723",
+    "service": "WAMPSERVER",
+    "category": "Framework",
+    "description": "WAMPSERVER (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "443944613",
+    "service": "WAMPSERVER",
+    "category": "Framework",
+    "description": "WAMPSERVER (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1666561833",
+    "service": "WildFly",
+    "category": "Framework",
+    "description": "WildFly (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1437701105",
+    "service": "XAMPP",
+    "category": "Framework",
+    "description": "XAMPP (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1298108480",
+    "service": "Yii PHP Framework",
+    "category": "Framework",
+    "description": "Yii PHP Framework (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1205024243",
+    "service": "lwIP Stack",
+    "category": "Framework",
+    "description": "lwIP Stack (Framework)",
+    "source": "community"
+  },
+  {
+    "hash": "-1587980969",
+    "service": "AMH",
+    "category": "Hosting",
+    "description": "Chinese hosting panel (AMH)",
+    "tags": [
+      "chinese",
+      "hosting",
+      "control-panel"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1822002133",
+    "service": "AMH Panel",
+    "category": "Hosting",
+    "description": "AMH Panel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810444",
+    "service": "BT Panel",
+    "category": "Hosting",
+    "description": "BaoTa server panel (宝塔面板)",
+    "tags": [
+      "chinese",
+      "hosting",
+      "control-panel"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-386189083",
+    "service": "BaoTa Panel",
+    "category": "Hosting",
+    "description": "BaoTa Panel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1119613926",
+    "service": "Bluehost",
+    "category": "Hosting",
+    "description": "Bluehost (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810433",
+    "service": "Cafe24 Korea",
+    "category": "Hosting",
+    "description": "Cafe24 Korea (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "988422585",
+    "service": "CapRover",
+    "category": "Hosting",
+    "description": "CapRover (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-235701012",
+    "service": "Cnservers LLC",
+    "category": "Hosting",
+    "description": "Cnservers LLC (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1661171190",
+    "service": "CyberPanel",
+    "category": "Hosting",
+    "description": "Hosting control panel with OpenLiteSpeed",
+    "tags": [
+      "hosting",
+      "control-panel",
+      "openlitespeed"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-741928197",
+    "service": "DirectAdmin",
+    "category": "Hosting",
+    "description": "Web hosting control panel",
+    "tags": [
+      "hosting",
+      "control-panel"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "774252049",
+    "service": "FastPanel Hosting",
+    "category": "Hosting",
+    "description": "FastPanel Hosting (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "2072198544",
+    "service": "Ferozo Panel",
+    "category": "Hosting",
+    "description": "Ferozo Panel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-421986013",
+    "service": "Homegrown Website Hosting",
+    "category": "Hosting",
+    "description": "Homegrown Website Hosting (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-972810761",
+    "service": "HostMonster",
+    "category": "Hosting",
+    "description": "HostMonster (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1188645141",
+    "service": "Hushen Server Master",
+    "category": "Hosting",
+    "description": "Hushen Server Master (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-986678507",
+    "service": "ISP Manager",
+    "category": "Hosting",
+    "description": "ISP Manager (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1151675028",
+    "service": "ISP Manager",
+    "category": "Hosting",
+    "description": "ISP Manager (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "483383992",
+    "service": "ISPConfig",
+    "category": "Hosting",
+    "description": "ISPConfig (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1510327675",
+    "service": "ISPConfig",
+    "category": "Hosting",
+    "description": "Open-source hosting control panel",
+    "tags": [
+      "hosting",
+      "control-panel",
+      "open-source"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-359395758",
+    "service": "ISPmanager",
+    "category": "Hosting",
+    "description": "ISPsystem hosting panel",
+    "tags": [
+      "hosting",
+      "control-panel"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1734609466",
+    "service": "JustHost",
+    "category": "Hosting",
+    "description": "JustHost (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "726817668",
+    "service": "KeyHelp Keyweb AG",
+    "category": "Hosting",
+    "description": "KeyHelp Keyweb AG (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1267819858",
+    "service": "KeyHelp Keyweb AG",
+    "category": "Hosting",
+    "description": "KeyHelp Keyweb AG (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1490343308",
+    "service": "MK-AUTH",
+    "category": "Hosting",
+    "description": "MK-AUTH (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-736276076",
+    "service": "MyASP",
+    "category": "Hosting",
+    "description": "MyASP (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-652508439",
+    "service": "Parallels Plesk",
+    "category": "Hosting",
+    "description": "Parallels Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-771764544",
+    "service": "Parallels Plesk",
+    "category": "Hosting",
+    "description": "Parallels Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-519765377",
+    "service": "Parallels Plesk",
+    "category": "Hosting",
+    "description": "Parallels Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-134375033",
+    "service": "Plesk",
+    "category": "Hosting",
+    "description": "Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1050786453",
+    "service": "Plesk",
+    "category": "Hosting",
+    "description": "Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-981606721",
+    "service": "Plesk",
+    "category": "Hosting",
+    "description": "Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-2054889066",
+    "service": "Sentora",
+    "category": "Hosting",
+    "description": "Sentora (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1268095485",
+    "service": "VZPP Plesk",
+    "category": "Hosting",
+    "description": "VZPP Plesk (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1862234742",
+    "service": "VestaCP",
+    "category": "Hosting",
+    "description": "Lightweight hosting control panel",
+    "tags": [
+      "hosting",
+      "control-panel"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1954835352",
+    "service": "VestaCP",
+    "category": "Hosting",
+    "description": "VestaCP (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-649378830",
+    "service": "WHM",
+    "category": "Hosting",
+    "description": "WHM (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1038557304",
+    "service": "Webmin",
+    "category": "Hosting",
+    "description": "Webmin (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1280907310",
+    "service": "Webmin",
+    "category": "Hosting",
+    "description": "Webmin (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1453890729",
+    "service": "Webmin",
+    "category": "Hosting",
+    "description": "Webmin (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "479413330",
+    "service": "Webmin",
+    "category": "Hosting",
+    "description": "Webmin (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1993518473",
+    "service": "cPanel",
+    "category": "Hosting",
+    "description": "cPanel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1544230796",
+    "service": "cPanel",
+    "category": "Hosting",
+    "description": "cPanel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1244636413",
+    "service": "cPanel",
+    "category": "Hosting",
+    "description": "cPanel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1500566322",
+    "service": "cPanel",
+    "category": "Hosting",
+    "description": "Web hosting control panel",
+    "tags": [
+      "hosting",
+      "control-panel"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1702393021",
+    "service": "mofinetwork",
+    "category": "Hosting",
+    "description": "mofinetwork (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "255892555",
+    "service": "wdCP Panel",
+    "category": "Hosting",
+    "description": "wdCP Panel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "1786752597",
+    "service": "wdCP Panel",
+    "category": "Hosting",
+    "description": "wdCP Panel (Hosting)",
+    "source": "community"
+  },
+  {
+    "hash": "-1474875778",
+    "service": "GLPI",
+    "category": "IT Service",
+    "description": "GLPI (IT Service)",
+    "source": "community"
+  },
+  {
+    "hash": "-2006308185",
+    "service": "OTRS",
+    "category": "IT Service",
+    "description": "OTRS (IT Service)",
+    "source": "community"
+  },
+  {
+    "hash": "-429287973",
+    "service": "Authelia",
+    "category": "Identity",
+    "description": "Open-source SSO and 2FA portal",
+    "tags": [
+      "go",
+      "sso",
+      "2fa"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1768416759",
+    "service": "Authentik",
+    "category": "Identity",
+    "description": "Open-source identity provider",
+    "tags": [
+      "python",
+      "sso",
+      "identity"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "172237534",
+    "service": "Keycloak",
+    "category": "Identity",
+    "description": "Open-source identity and access management",
+    "tags": [
+      "java",
+      "sso",
+      "oauth",
+      "openid"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "90680708",
+    "service": "Domoticz Home Automation",
+    "category": "IoT",
+    "description": "Domoticz Home Automation (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "903086190",
+    "service": "Honeywell",
+    "category": "IoT",
+    "description": "Honeywell (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "462223993",
+    "service": "Jeedom Home Automation",
+    "category": "IoT",
+    "description": "Jeedom Home Automation (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "904434662",
+    "service": "Loxone Automation",
+    "category": "IoT",
+    "description": "Loxone Automation (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "381100274",
+    "service": "Moxa ioLogik",
+    "category": "IoT",
+    "description": "Moxa ioLogik (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "321591353",
+    "service": "Node-RED",
+    "category": "IoT",
+    "description": "Node-RED (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "1307375944",
+    "service": "OctoPrint",
+    "category": "IoT",
+    "description": "OctoPrint (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "-625364318",
+    "service": "OkoFEN Pellematic",
+    "category": "IoT",
+    "description": "OkoFEN Pellematic (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "1777351344",
+    "service": "SOYAL Serial Device Server",
+    "category": "IoT",
+    "description": "SOYAL Serial Device Server (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "-1547576879",
+    "service": "Saia Burgess Controls",
+    "category": "IoT",
+    "description": "Saia Burgess Controls (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "-336242473",
+    "service": "Siemens OZW772",
+    "category": "IoT",
+    "description": "Siemens OZW772 (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "-644617577",
+    "service": "SmartLAN/G",
+    "category": "IoT",
+    "description": "SmartLAN/G (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "979634648",
+    "service": "StruxureWare Schneider",
+    "category": "IoT",
+    "description": "StruxureWare Schneider (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "1975413433",
+    "service": "Sunny WebBox",
+    "category": "IoT",
+    "description": "Sunny WebBox (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "16202868",
+    "service": "Universal Devices ISY",
+    "category": "IoT",
+    "description": "Universal Devices ISY (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "147973611",
+    "service": "Xinrui IoT Platform",
+    "category": "IoT",
+    "description": "Xinrui IoT Platform (IoT)",
+    "source": "community"
+  },
+  {
+    "hash": "-1593651747",
+    "service": "Blackboard",
+    "category": "LMS",
+    "description": "Blackboard (LMS)",
+    "source": "community"
+  },
+  {
+    "hash": "575613323",
+    "service": "Canvas LMS",
+    "category": "LMS",
+    "description": "Canvas LMS (LMS)",
+    "source": "community"
+  },
+  {
+    "hash": "-1485062833",
+    "service": "Canvas LMS",
+    "category": "LMS",
+    "description": "Modern LMS by Instructure",
+    "tags": [
+      "ruby",
+      "education"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "478149598",
+    "service": "Elib Library System",
+    "category": "LMS",
+    "description": "Elib Library System (LMS)",
+    "source": "community"
+  },
+  {
+    "hash": "163323586",
+    "service": "Moodle",
+    "category": "LMS",
+    "description": "Open-source learning management",
+    "tags": [
+      "php",
+      "education"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-438482901",
+    "service": "Moodle",
+    "category": "LMS",
+    "description": "Moodle (LMS)",
+    "source": "community"
+  },
+  {
+    "hash": "324736494",
+    "service": "Open edX",
+    "category": "LMS",
+    "description": "Open-source MOOC platform",
+    "tags": [
+      "python",
+      "education",
+      "mooc"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "872241921",
+    "service": "Fluentd",
+    "category": "Logging",
+    "description": "Log collector and processor",
+    "tags": [
+      "ruby",
+      "logs",
+      "collector"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1747323616",
+    "service": "Graylog",
+    "category": "Logging",
+    "description": "Log management platform",
+    "tags": [
+      "java",
+      "logs",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1944478309",
+    "service": "Loki",
+    "category": "Logging",
+    "description": "Grafana Loki log aggregation",
+    "tags": [
+      "go",
+      "logs",
+      "cloud-native"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1153873472",
+    "service": "AirWatch MDM",
+    "category": "MDM",
+    "description": "AirWatch MDM (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "788771792",
+    "service": "AirWatch MDM",
+    "category": "MDM",
+    "description": "AirWatch MDM (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "321909464",
+    "service": "AirWatch MDM",
+    "category": "MDM",
+    "description": "AirWatch MDM (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "-1863663974",
+    "service": "AirWatch MDM",
+    "category": "MDM",
+    "description": "AirWatch MDM (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "1095915848",
+    "service": "AirWatch MDM",
+    "category": "MDM",
+    "description": "AirWatch MDM (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "1262005940",
+    "service": "Jamf Pro",
+    "category": "MDM",
+    "description": "Jamf Pro (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "-1250474341",
+    "service": "VMware Workspace ONE",
+    "category": "MDM",
+    "description": "VMware Workspace ONE (MDM)",
+    "source": "community"
+  },
+  {
+    "hash": "1676919780",
+    "service": "35 Enterprise Email",
+    "category": "Mail",
+    "description": "35 Enterprise Email (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-194791768",
+    "service": "AfterLogic WebMail",
+    "category": "Mail",
+    "description": "AfterLogic WebMail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-1588746893",
+    "service": "CommuniGate",
+    "category": "Mail",
+    "description": "CommuniGate (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "728788645",
+    "service": "IBM Notes",
+    "category": "Mail",
+    "description": "IBM Notes (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-1678298769",
+    "service": "Kerio Connect WebMail",
+    "category": "Mail",
+    "description": "Kerio Connect WebMail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-677167908",
+    "service": "Kerio Connect Webmail",
+    "category": "Mail",
+    "description": "Kerio Connect Webmail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "99432374",
+    "service": "MDaemon Remote Admin",
+    "category": "Mail",
+    "description": "MDaemon Remote Admin (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-766957661",
+    "service": "MDaemon Webmail",
+    "category": "Mail",
+    "description": "MDaemon Webmail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "2127152956",
+    "service": "MailWizz",
+    "category": "Mail",
+    "description": "MailWizz (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "2058960600",
+    "service": "Mailcow",
+    "category": "Mail",
+    "description": "Dockerized mail server",
+    "tags": [
+      "docker",
+      "mail-server"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "2146763496",
+    "service": "Mailcow",
+    "category": "Mail",
+    "description": "Mailcow (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-2057558656",
+    "service": "Microsoft O365 Login",
+    "category": "Mail",
+    "description": "Microsoft Office 365 login page",
+    "tags": [
+      "microsoft",
+      "cloud",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "442749392",
+    "service": "Microsoft OWA",
+    "category": "Mail",
+    "description": "Microsoft OWA (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-1249852061",
+    "service": "Microsoft Outlook",
+    "category": "Mail",
+    "description": "Microsoft Outlook (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "1768726119",
+    "service": "Microsoft Outlook Web App",
+    "category": "Mail",
+    "description": "Microsoft OWA/Exchange webmail",
+    "tags": [
+      "microsoft",
+      "exchange",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1356662359",
+    "service": "Outlook Web App",
+    "category": "Mail",
+    "description": "Outlook Web App (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-2140379067",
+    "service": "RoundCube Webmail",
+    "category": "Mail",
+    "description": "RoundCube Webmail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-976235259",
+    "service": "Roundcube",
+    "category": "Mail",
+    "description": "Open-source webmail client",
+    "tags": [
+      "php",
+      "webmail"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1935525788",
+    "service": "SmarterMail",
+    "category": "Mail",
+    "description": "SmarterMail (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "1985721423",
+    "service": "WorldClient Mdaemon",
+    "category": "Mail",
+    "description": "WorldClient Mdaemon (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "-35107086",
+    "service": "WorldClient Mdaemon",
+    "category": "Mail",
+    "description": "WorldClient Mdaemon (Mail)",
+    "source": "community"
+  },
+  {
+    "hash": "1624375939",
+    "service": "Zimbra Web Client",
+    "category": "Mail",
+    "description": "Zimbra email and collaboration",
+    "tags": [
+      "java",
+      "mail-server",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "944969688",
+    "service": "Deluge",
+    "category": "Media",
+    "description": "Deluge (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-1589842876",
+    "service": "Deluge Web UI",
+    "category": "Media",
+    "description": "Deluge Web UI (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-393788031",
+    "service": "Flussonic Streaming",
+    "category": "Media",
+    "description": "Flussonic Streaming (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "1424295654",
+    "service": "Icecast Streaming Server",
+    "category": "Media",
+    "description": "Icecast Streaming Server (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-2069226242",
+    "service": "Jellyfin",
+    "category": "Media",
+    "description": "Jellyfin (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-895890586",
+    "service": "Plex Server",
+    "category": "Media",
+    "description": "Plex Server (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-632583950",
+    "service": "Shoutcast Server",
+    "category": "Media",
+    "description": "Shoutcast Server (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-878891718",
+    "service": "Twonky Server",
+    "category": "Media",
+    "description": "Twonky Server (Media)",
+    "source": "community"
+  },
+  {
+    "hash": "-976456932",
+    "service": "ActiveMQ",
+    "category": "Message Queue",
+    "description": "Apache ActiveMQ message broker",
+    "tags": [
+      "java",
+      "jms"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1766699363",
+    "service": "Apache ActiveMQ",
+    "category": "Message Queue",
+    "description": "Apache ActiveMQ (Message Queue)",
+    "source": "community"
+  },
+  {
+    "hash": "-2014376243",
+    "service": "EMQX",
+    "category": "Message Queue",
+    "description": "MQTT broker for IoT",
+    "tags": [
+      "erlang",
+      "mqtt",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2014376243",
+    "service": "EMQX",
+    "category": "Message Queue",
+    "description": "MQTT broker for IoT",
+    "tags": [
+      "erlang",
+      "mqtt",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1831548046",
+    "service": "Kafka (UI)",
+    "category": "Message Queue",
+    "description": "Apache Kafka management UI",
+    "tags": [
+      "java",
+      "streaming"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1831548046",
+    "service": "Kafka (UI)",
+    "category": "Message Queue",
+    "description": "Apache Kafka management UI",
+    "tags": [
+      "java",
+      "streaming"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-353533926",
+    "service": "NATS",
+    "category": "Message Queue",
+    "description": "Lightweight messaging system",
+    "tags": [
+      "go",
+      "messaging"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1010493916",
+    "service": "RabbitMQ",
+    "category": "Message Queue",
+    "description": "AMQP message broker",
+    "tags": [
+      "erlang",
+      "amqp"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1064742722",
+    "service": "RabbitMQ",
+    "category": "Message Queue",
+    "description": "RabbitMQ (Message Queue)",
+    "source": "community"
+  },
+  {
+    "hash": "1010493916",
+    "service": "RabbitMQ",
+    "category": "Message Queue",
+    "description": "AMQP message broker",
+    "tags": [
+      "erlang",
+      "amqp"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1929532064",
+    "service": "Apache SkyWalking",
+    "category": "Monitoring",
+    "description": "Apache SkyWalking (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "1424295984",
+    "service": "Cacti",
+    "category": "Monitoring",
+    "description": "Network graphing solution",
+    "tags": [
+      "php",
+      "network",
+      "graphing"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-244146369",
+    "service": "Checkmk",
+    "category": "Monitoring",
+    "description": "Infrastructure monitoring",
+    "tags": [
+      "infrastructure",
+      "enterprise"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-368490461",
+    "service": "Entronix Energy Monitor",
+    "category": "Monitoring",
+    "description": "Entronix Energy Monitor (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "1622043013",
+    "service": "Feisi Network Patrol",
+    "category": "Monitoring",
+    "description": "Feisi Network Patrol (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "2123863676",
+    "service": "Grafana",
+    "category": "Monitoring",
+    "description": "Open-source analytics and monitoring dashboard",
+    "tags": [
+      "visualization",
+      "dashboard",
+      "observability"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1540328751",
+    "service": "Grafana (Legacy)",
+    "category": "Monitoring",
+    "description": "Grafana legacy version",
+    "tags": [
+      "visualization",
+      "dashboard"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-628229493",
+    "service": "Huace Monitoring System",
+    "category": "Monitoring",
+    "description": "Huace Monitoring System (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "1544239988",
+    "service": "LibreNMS",
+    "category": "Monitoring",
+    "description": "Network monitoring system",
+    "tags": [
+      "php",
+      "network",
+      "snmp"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2004299648",
+    "service": "Nagios",
+    "category": "Monitoring",
+    "description": "Infrastructure monitoring system",
+    "tags": [
+      "infrastructure",
+      "legacy"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1302486561",
+    "service": "NetData",
+    "category": "Monitoring",
+    "description": "NetData (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "1585145626",
+    "service": "NetData Dashboard",
+    "category": "Monitoring",
+    "description": "NetData Dashboard (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "-182423204",
+    "service": "NetData Dashboard",
+    "category": "Monitoring",
+    "description": "NetData Dashboard (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "1872269167",
+    "service": "PRTG",
+    "category": "Monitoring",
+    "description": "Paessler network monitoring",
+    "tags": [
+      "windows",
+      "network"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-655683626",
+    "service": "PRTG Network Monitor",
+    "category": "Monitoring",
+    "description": "PRTG Network Monitor (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "-1788112745",
+    "service": "PowerMTA Monitoring",
+    "category": "Monitoring",
+    "description": "PowerMTA Monitoring (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "989289239",
+    "service": "Progress MOVEit",
+    "category": "Monitoring",
+    "description": "Managed file transfer",
+    "tags": [
+      "file-transfer",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1118684092",
+    "service": "Prometheus",
+    "category": "Monitoring",
+    "description": "Cloud-native metrics and alerting",
+    "tags": [
+      "metrics",
+      "cloud-native"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1399433489",
+    "service": "Prometheus",
+    "category": "Monitoring",
+    "description": "Prometheus (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "2063428236",
+    "service": "Sentry",
+    "category": "Monitoring",
+    "description": "Sentry (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "430582574",
+    "service": "SmartPing",
+    "category": "Monitoring",
+    "description": "SmartPing (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "-2117390767",
+    "service": "Spiceworks",
+    "category": "Monitoring",
+    "description": "Spiceworks (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "-335153896",
+    "service": "Traccar GPS Tracking",
+    "category": "Monitoring",
+    "description": "Traccar GPS Tracking (Monitoring)",
+    "source": "community"
+  },
+  {
+    "hash": "-682830193",
+    "service": "Uptime Kuma",
+    "category": "Monitoring",
+    "description": "Self-hosted uptime monitoring",
+    "tags": [
+      "nodejs",
+      "self-hosted",
+      "uptime"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "892542951",
+    "service": "Zabbix",
+    "category": "Monitoring",
+    "description": "Enterprise infrastructure monitoring",
+    "tags": [
+      "infrastructure",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1356973161",
+    "service": "Aolian Communication Platform",
+    "category": "OA",
+    "description": "Aolian Communication Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1169502834",
+    "service": "Bai'ao Ruida",
+    "category": "OA",
+    "description": "Bai'ao Ruida (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1068428644",
+    "service": "Changjie CRM",
+    "category": "OA",
+    "description": "Changjie CRM (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1971504131",
+    "service": "Command Dispatch Platform",
+    "category": "OA",
+    "description": "Command Dispatch Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-179985729",
+    "service": "Dilang Cloud OA",
+    "category": "OA",
+    "description": "Dilang Cloud OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-391577146",
+    "service": "FE Business Collaboration",
+    "category": "OA",
+    "description": "FE Business Collaboration (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2062026853",
+    "service": "Fanwei EMP Mobile Platform",
+    "category": "OA",
+    "description": "Fanwei EMP Mobile Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1578525679",
+    "service": "Fanwei OA",
+    "category": "OA",
+    "description": "Fanwei OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1668183994",
+    "service": "Fanwei e-bridge",
+    "category": "OA",
+    "description": "Fanwei e-bridge OA (泛微e-bridge)",
+    "tags": [
+      "chinese",
+      "oa",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1251810444",
+    "service": "Fanwei e-cology",
+    "category": "OA",
+    "description": "Fanwei e-cology OA (泛微e-cology)",
+    "tags": [
+      "chinese",
+      "oa",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "829921184",
+    "service": "H3 BPM",
+    "category": "OA",
+    "description": "H3 BPM workflow (H3 BPM)",
+    "tags": [
+      "chinese",
+      "bpm",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1704826498",
+    "service": "Huixing Water System",
+    "category": "OA",
+    "description": "Huixing Water System (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1185226132",
+    "service": "Jingqi Rescue System",
+    "category": "OA",
+    "description": "Jingqi Rescue System (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-364449966",
+    "service": "Jinzhong Smart Logistics",
+    "category": "OA",
+    "description": "Jinzhong Smart Logistics (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1893992090",
+    "service": "Kingdee EAS",
+    "category": "OA",
+    "description": "Kingdee EAS ERP (金蝶EAS)",
+    "tags": [
+      "chinese",
+      "erp",
+      "enterprise",
+      "java"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1648521158",
+    "service": "Landray OA",
+    "category": "OA",
+    "description": "Landray OA system (蓝凌OA)",
+    "tags": [
+      "chinese",
+      "oa",
+      "enterprise",
+      "java"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1143915194",
+    "service": "Langxin Tianji HR System",
+    "category": "OA",
+    "description": "Langxin Tianji HR System (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-626335361",
+    "service": "Mingyuan Cloud ERP",
+    "category": "OA",
+    "description": "Mingyuan Cloud ERP (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-834208471",
+    "service": "Mingyuan Cloud MIP",
+    "category": "OA",
+    "description": "Mingyuan Cloud MIP (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1591287747",
+    "service": "Mingzhi OA",
+    "category": "OA",
+    "description": "Mingzhi OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1015496453",
+    "service": "Red Sea eHR",
+    "category": "OA",
+    "description": "Red Sea eHR (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1986460035",
+    "service": "Tianzhi Smart Hospital",
+    "category": "OA",
+    "description": "Tianzhi Smart Hospital (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-759108386",
+    "service": "Tongda OA",
+    "category": "OA",
+    "description": "Tongda OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1524374260",
+    "service": "Tongda OA",
+    "category": "OA",
+    "description": "Tongda OA system (通达OA)",
+    "tags": [
+      "chinese",
+      "oa",
+      "enterprise",
+      "php"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1827521324",
+    "service": "Wanhu ezOFFICE",
+    "category": "OA",
+    "description": "Wanhu ezOFFICE (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "872805507",
+    "service": "Wukong CRM",
+    "category": "OA",
+    "description": "Wukong CRM (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1850889691",
+    "service": "Xieda OA",
+    "category": "OA",
+    "description": "Xieda OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1652488516",
+    "service": "Xinhu OA",
+    "category": "OA",
+    "description": "Xinhu OA (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1170487960",
+    "service": "Yinda Huizhi Platform",
+    "category": "OA",
+    "description": "Yinda Huizhi Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1183274548",
+    "service": "Yonyou BIP Data Service",
+    "category": "OA",
+    "description": "Yonyou BIP Data Service (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-299520369",
+    "service": "Yonyou GRP-U8",
+    "category": "OA",
+    "description": "Yonyou GRP-U8 (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1587980969",
+    "service": "Yonyou NC",
+    "category": "OA",
+    "description": "Yonyou NC ERP (用友NC)",
+    "tags": [
+      "chinese",
+      "erp",
+      "enterprise",
+      "java"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "2119138714",
+    "service": "Yonyou U8",
+    "category": "OA",
+    "description": "Yonyou U8 ERP (用友U8)",
+    "tags": [
+      "chinese",
+      "erp",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "2049187099",
+    "service": "Youjia Changjie U+",
+    "category": "OA",
+    "description": "Youjia Changjie U+ (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "5471989",
+    "service": "Zhiyuan OA",
+    "category": "OA",
+    "description": "Zhiyuan OA system (致远OA)",
+    "tags": [
+      "chinese",
+      "oa",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1632964065",
+    "service": "Zhongchengkexin Platform",
+    "category": "OA",
+    "description": "Zhongchengkexin Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-384583337",
+    "service": "e-cology O\u0026M Platform",
+    "category": "OA",
+    "description": "e-cology O\u0026M Platform (OA)",
+    "tags": [
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1466673461",
+    "service": "协众OA",
+    "category": "OA",
+    "description": "协众OA (OA)",
+    "tags": [
+      "chinese",
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1533124028",
+    "service": "孚盟云 CRM",
+    "category": "OA",
+    "description": "孚盟云 CRM (OA)",
+    "tags": [
+      "chinese",
+      "chinese"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1502215382",
+    "service": "Passbolt",
+    "category": "Password Manager",
+    "description": "Team password manager",
+    "tags": [
+      "php",
+      "password",
+      "team"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1097683300",
+    "service": "Vaultwarden",
+    "category": "Password Manager",
+    "description": "Bitwarden-compatible password manager",
+    "tags": [
+      "rust",
+      "bitwarden",
+      "self-hosted"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-772187138",
+    "service": "Brother Printer",
+    "category": "Printer",
+    "description": "Brother network printer",
+    "tags": [
+      "brother",
+      "printer",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1442689634",
+    "service": "Canon Printer",
+    "category": "Printer",
+    "description": "Canon network printer",
+    "tags": [
+      "canon",
+      "printer",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1320939584",
+    "service": "Epson Printer",
+    "category": "Printer",
+    "description": "Epson network printer",
+    "tags": [
+      "epson",
+      "printer",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "905744673",
+    "service": "HP Printer",
+    "category": "Printer",
+    "description": "HP network printer",
+    "tags": [
+      "hp",
+      "printer",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2144363468",
+    "service": "HP Printer/Server",
+    "category": "Printer",
+    "description": "HP Printer/Server (Printer)",
+    "source": "community"
+  },
+  {
+    "hash": "-1142586156",
+    "service": "PaperCut MF",
+    "category": "Printer",
+    "description": "PaperCut MF (Printer)",
+    "source": "community"
+  },
+  {
+    "hash": "1483097076",
+    "service": "SyncThru Web Service",
+    "category": "Printer",
+    "description": "SyncThru Web Service (Printer)",
+    "source": "community"
+  },
+  {
+    "hash": "1648521158",
+    "service": "Xerox Printer",
+    "category": "Printer",
+    "description": "Xerox network printer",
+    "tags": [
+      "xerox",
+      "printer",
+      "iot"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "628535358",
+    "service": "Atlassian Jira",
+    "category": "Project Management",
+    "description": "Atlassian issue tracking and project management",
+    "tags": [
+      "atlassian",
+      "agile",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1387751544",
+    "service": "Atlassian Jira (Legacy)",
+    "category": "Project Management",
+    "description": "Atlassian Jira legacy version",
+    "tags": [
+      "atlassian",
+      "agile",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1836828108",
+    "service": "OpenProject",
+    "category": "Project Management",
+    "description": "OpenProject (Project Management)",
+    "source": "community"
+  },
+  {
+    "hash": "-1591257963",
+    "service": "Redmine",
+    "category": "Project Management",
+    "description": "Open-source project management",
+    "tags": [
+      "ruby",
+      "open-source"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-663179278",
+    "service": "Taiga",
+    "category": "Project Management",
+    "description": "Agile project management platform",
+    "tags": [
+      "python",
+      "agile"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-82958153",
+    "service": "ConnectWise ScreenConnect",
+    "category": "Remote Access",
+    "description": "ConnectWise ScreenConnect (Remote Access)",
+    "source": "community"
+  },
+  {
+    "hash": "-2052468252",
+    "service": "FreeRDP",
+    "category": "Remote Access",
+    "description": "FreeRDP (Remote Access)",
+    "source": "community"
+  },
+  {
+    "hash": "-254215620",
+    "service": "Artifactory",
+    "category": "Repository",
+    "description": "JFrog artifact management",
+    "tags": [
+      "java",
+      "artifact",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1086177704",
+    "service": "Nexus",
+    "category": "Repository",
+    "description": "Sonatype Nexus artifact repository",
+    "tags": [
+      "java",
+      "maven",
+      "artifact"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-587741716",
+    "service": "ADB Broadband",
+    "category": "Router",
+    "description": "ADB Broadband (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-360566773",
+    "service": "ARRIS",
+    "category": "Router",
+    "description": "ARRIS (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-166151761",
+    "service": "Abilis Network/Automation",
+    "category": "Router",
+    "description": "Abilis Network/Automation (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1684506554",
+    "service": "AdGuard Home",
+    "category": "Router",
+    "description": "Network-wide ad blocker",
+    "tags": [
+      "dns",
+      "ad-blocker"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1479202414",
+    "service": "Arcadyan O2 Box",
+    "category": "Router",
+    "description": "Arcadyan O2 Box (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1477563858",
+    "service": "Arris",
+    "category": "Router",
+    "description": "Arris (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1142227528",
+    "service": "Aruba Virtual Controller",
+    "category": "Router",
+    "description": "Aruba Virtual Controller (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1710631084",
+    "service": "Askey Cable Modem",
+    "category": "Router",
+    "description": "Askey Cable Modem (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "89321398",
+    "service": "Askey Cable Modem",
+    "category": "Router",
+    "description": "Askey Cable Modem (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1770799630",
+    "service": "Bintec Elmeg",
+    "category": "Router",
+    "description": "Bintec Elmeg (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-375623619",
+    "service": "Bintec Elmeg",
+    "category": "Router",
+    "description": "Bintec Elmeg (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-435817905",
+    "service": "Cambium Networks",
+    "category": "Router",
+    "description": "Cambium Networks (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1908556829",
+    "service": "CenturyLink Modem",
+    "category": "Router",
+    "description": "CenturyLink Modem (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "163842882",
+    "service": "Cisco Meraki",
+    "category": "Router",
+    "description": "Cisco Meraki (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "804949239",
+    "service": "Cisco Meraki Dashboard",
+    "category": "Router",
+    "description": "Cisco Meraki Dashboard (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-299287097",
+    "service": "Cisco Router",
+    "category": "Router",
+    "description": "Cisco router web interface",
+    "tags": [
+      "cisco",
+      "router",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "224536051",
+    "service": "Coship Electronics",
+    "category": "Router",
+    "description": "Coship Electronics (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1457536113",
+    "service": "CradlePoint",
+    "category": "Router",
+    "description": "CradlePoint (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1466912879",
+    "service": "CradlePoint Router",
+    "category": "Router",
+    "description": "CradlePoint Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1081719753",
+    "service": "D-Link Network",
+    "category": "Router",
+    "description": "D-Link Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2031183903",
+    "service": "D-Link Network",
+    "category": "Router",
+    "description": "D-Link Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1037387972",
+    "service": "D-Link Router",
+    "category": "Router",
+    "description": "D-Link Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1703788174",
+    "service": "D-Link Router",
+    "category": "Router",
+    "description": "D-Link Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1038500535",
+    "service": "D-Link Router",
+    "category": "Router",
+    "description": "D-Link Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2071993222",
+    "service": "D-Link Router",
+    "category": "Router",
+    "description": "D-Link router web interface",
+    "tags": [
+      "d-link",
+      "router",
+      "consumer"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "517158172",
+    "service": "D-Link Router",
+    "category": "Router",
+    "description": "D-Link Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "252728887",
+    "service": "DD-WRT",
+    "category": "Router",
+    "description": "DD-WRT (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-519765223",
+    "service": "DrayTek Router",
+    "category": "Router",
+    "description": "DrayTek Vigor router",
+    "tags": [
+      "draytek",
+      "router",
+      "vpn"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1877797890",
+    "service": "Eltex Router",
+    "category": "Router",
+    "description": "Eltex Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1973665246",
+    "service": "Entrolink",
+    "category": "Router",
+    "description": "Entrolink (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-219752612",
+    "service": "FRITZ!Box",
+    "category": "Router",
+    "description": "AVM FRITZ!Box router",
+    "tags": [
+      "avm",
+      "router",
+      "consumer"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1838417872",
+    "service": "Freebox OS",
+    "category": "Router",
+    "description": "Freebox OS (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "251106693",
+    "service": "GPON Home Gateway",
+    "category": "Router",
+    "description": "GPON Home Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1862132268",
+    "service": "Gargoyle Router",
+    "category": "Router",
+    "description": "Gargoyle Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "711742418",
+    "service": "Hitron Technologies",
+    "category": "Router",
+    "description": "Hitron Technologies (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "607846949",
+    "service": "Hitron Technologies",
+    "category": "Router",
+    "description": "Hitron Technologies (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "281559989",
+    "service": "Huawei",
+    "category": "Router",
+    "description": "Huawei (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1395400951",
+    "service": "Huawei ADSL/Router",
+    "category": "Router",
+    "description": "Huawei ADSL/Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "74935566",
+    "service": "Huawei HG8245H",
+    "category": "Router",
+    "description": "Huawei ONT/modem (华为光猫)",
+    "tags": [
+      "chinese",
+      "ont",
+      "huawei"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-884776764",
+    "service": "Huawei Network",
+    "category": "Router",
+    "description": "Huawei Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "987967490",
+    "service": "Huawei Network",
+    "category": "Router",
+    "description": "Huawei Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2109473187",
+    "service": "Huawei Router",
+    "category": "Router",
+    "description": "Huawei Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1446750257",
+    "service": "Huawei Switch",
+    "category": "Router",
+    "description": "Huawei network switch (华为交换机)",
+    "tags": [
+      "chinese",
+      "switch",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1648531157",
+    "service": "InfiNet Wireless",
+    "category": "Router",
+    "description": "InfiNet Wireless (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "283740897",
+    "service": "Intelbras SA",
+    "category": "Router",
+    "description": "Intelbras SA (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1343070146",
+    "service": "Intelbras SA",
+    "category": "Router",
+    "description": "Intelbras SA (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2006716043",
+    "service": "Intelbras SA",
+    "category": "Router",
+    "description": "Intelbras SA (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-359621743",
+    "service": "Intelbras Wireless",
+    "category": "Router",
+    "description": "Intelbras Wireless (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2141724739",
+    "service": "Juniper Device Manager",
+    "category": "Router",
+    "description": "Juniper Device Manager (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "547282364",
+    "service": "Keenetic",
+    "category": "Router",
+    "description": "Keenetic (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-325082670",
+    "service": "LANCOM Systems",
+    "category": "Router",
+    "description": "LANCOM Systems (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1467395679",
+    "service": "Ligowave Network",
+    "category": "Router",
+    "description": "Ligowave Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2063036701",
+    "service": "Linksys Smart Wi-Fi",
+    "category": "Router",
+    "description": "Linksys Smart Wi-Fi (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1234665500",
+    "service": "Maipu Multi-service Gateway",
+    "category": "Router",
+    "description": "Maipu Multi-service Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1723752240",
+    "service": "Microhard Systems",
+    "category": "Router",
+    "description": "Microhard Systems (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "362091310",
+    "service": "MikroTik RouterOS",
+    "category": "Router",
+    "description": "MikroTik RouterOS web interface",
+    "tags": [
+      "mikrotik",
+      "router"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "916642917",
+    "service": "Multilaser",
+    "category": "Router",
+    "description": "Multilaser (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1922032523",
+    "service": "NEC WebPro",
+    "category": "Router",
+    "description": "NEC WebPro (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-978656757",
+    "service": "NETIASPOT",
+    "category": "Router",
+    "description": "NETIASPOT (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-831826827",
+    "service": "NOS Router",
+    "category": "Router",
+    "description": "NOS Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "5542029",
+    "service": "NetComWireless",
+    "category": "Router",
+    "description": "NetComWireless (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1319025408",
+    "service": "Netgear",
+    "category": "Router",
+    "description": "Netgear (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1047213685",
+    "service": "Netgear Network",
+    "category": "Router",
+    "description": "Netgear Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-594256627",
+    "service": "Netis Network Device",
+    "category": "Router",
+    "description": "Netis Network Device (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1326164945",
+    "service": "Netis Router",
+    "category": "Router",
+    "description": "Netis Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1124868062",
+    "service": "Netport Software DSL",
+    "category": "Router",
+    "description": "Netport Software DSL (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2071993228",
+    "service": "Nomadix Access Gateway",
+    "category": "Router",
+    "description": "Nomadix Access Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-986816620",
+    "service": "OpenRG",
+    "category": "Router",
+    "description": "OpenRG (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1941381095",
+    "service": "OpenWrt LuCI",
+    "category": "Router",
+    "description": "OpenWrt LuCI (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "432733105",
+    "service": "Pi-Star",
+    "category": "Router",
+    "description": "Pi-Star (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2024465303",
+    "service": "Pi-hole",
+    "category": "Router",
+    "description": "Network ad blocker",
+    "tags": [
+      "dns",
+      "ad-blocker",
+      "raspberry-pi"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "2055322029",
+    "service": "Realtek",
+    "category": "Router",
+    "description": "Realtek (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1933493443",
+    "service": "Residential Gateway",
+    "category": "Router",
+    "description": "Residential Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2069844696",
+    "service": "Ruckus Wireless",
+    "category": "Router",
+    "description": "Ruckus Wireless (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "738520282",
+    "service": "Ruijie NBR Router",
+    "category": "Router",
+    "description": "Ruijie NBR Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-692947551",
+    "service": "Ruijie Networks",
+    "category": "Router",
+    "description": "Ruijie Networks (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2068954604",
+    "service": "Ruijie Switch",
+    "category": "Router",
+    "description": "Ruijie network switch (锐捷交换机)",
+    "tags": [
+      "chinese",
+      "switch",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1571472432",
+    "service": "Sierra Wireless",
+    "category": "Router",
+    "description": "Sierra Wireless (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1871496583",
+    "service": "Solar Network Management",
+    "category": "Router",
+    "description": "Solar Network Management (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1410610129",
+    "service": "Supermicro IPMI",
+    "category": "Router",
+    "description": "Supermicro IPMI (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "547474373",
+    "service": "TOTOLINK Router",
+    "category": "Router",
+    "description": "TOTOLINK Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1274078387",
+    "service": "TP-LINK Network Device",
+    "category": "Router",
+    "description": "TP-LINK Network Device (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1842351293",
+    "service": "TP-LINK Network Device",
+    "category": "Router",
+    "description": "TP-LINK Network Device (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "475145939",
+    "service": "TP-Link Router",
+    "category": "Router",
+    "description": "TP-Link router web interface",
+    "tags": [
+      "tp-link",
+      "router",
+      "consumer"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-2138771289",
+    "service": "Technicolor",
+    "category": "Router",
+    "description": "Technicolor (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1594377337",
+    "service": "Technicolor Gateway",
+    "category": "Router",
+    "description": "Technicolor Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1835479497",
+    "service": "Technicolor Gateway",
+    "category": "Router",
+    "description": "Technicolor Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "156312019",
+    "service": "Technicolor/Thomson Speedtouch",
+    "category": "Router",
+    "description": "Technicolor/Thomson Speedtouch (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1612496354",
+    "service": "Teltonika",
+    "category": "Router",
+    "description": "Teltonika (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "119741608",
+    "service": "Teltonika",
+    "category": "Router",
+    "description": "Teltonika (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-2145085239",
+    "service": "Tenda Web Master",
+    "category": "Router",
+    "description": "Tenda Web Master (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1346447358",
+    "service": "TilginAB HomeGateway",
+    "category": "Router",
+    "description": "TilginAB HomeGateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1911253822",
+    "service": "UPC Ceska Republica",
+    "category": "Router",
+    "description": "UPC Ceska Republica (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1020814938",
+    "service": "Ubiquiti AirOS",
+    "category": "Router",
+    "description": "Ubiquiti AirOS (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1249285083",
+    "service": "Ubiquiti Aircube",
+    "category": "Router",
+    "description": "Ubiquiti Aircube (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1677255344",
+    "service": "Ubiquiti EdgeOS",
+    "category": "Router",
+    "description": "Ubiquiti EdgeRouter",
+    "tags": [
+      "ubiquiti",
+      "router"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1446794564",
+    "service": "Ubiquiti Login Portal",
+    "category": "Router",
+    "description": "Ubiquiti Login Portal (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1157789622",
+    "service": "Ubiquiti UNMS",
+    "category": "Router",
+    "description": "Ubiquiti UNMS (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-697231354",
+    "service": "Ubiquiti airOS",
+    "category": "Router",
+    "description": "Ubiquiti airMAX wireless",
+    "tags": [
+      "ubiquiti",
+      "wireless"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "812085386",
+    "service": "UniFi Controller",
+    "category": "Router",
+    "description": "UniFi network management",
+    "tags": [
+      "ubiquiti",
+      "network",
+      "management"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "104189364",
+    "service": "Vigor Router",
+    "category": "Router",
+    "description": "Vigor Router (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "165976831",
+    "service": "Vodafone Technicolor",
+    "category": "Router",
+    "description": "Vodafone Technicolor (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-106646451",
+    "service": "WISPR Airlan",
+    "category": "Router",
+    "description": "WISPR Airlan (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1835479347",
+    "service": "ZTE F660",
+    "category": "Router",
+    "description": "ZTE ONT/modem (中兴光猫)",
+    "tags": [
+      "chinese",
+      "ont",
+      "zte"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "459900502",
+    "service": "ZTE Gateway",
+    "category": "Router",
+    "description": "ZTE Gateway (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1427976651",
+    "service": "ZTE Network",
+    "category": "Router",
+    "description": "ZTE Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1684506554",
+    "service": "ZTE Switch",
+    "category": "Router",
+    "description": "ZTE network switch (中兴交换机)",
+    "tags": [
+      "chinese",
+      "switch",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "943925975",
+    "service": "ZyXEL",
+    "category": "Router",
+    "description": "ZyXEL (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-882760066",
+    "service": "ZyXEL Network",
+    "category": "Router",
+    "description": "ZyXEL Network (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1205970462",
+    "service": "Zyxel Web Configurator",
+    "category": "Router",
+    "description": "Zyxel Web Configurator (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-256828986",
+    "service": "iDirect Canada",
+    "category": "Router",
+    "description": "iDirect Canada (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-271448102",
+    "service": "iKuai Networks",
+    "category": "Router",
+    "description": "iKuai Networks (Router)",
+    "tags": [
+      "network"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1611729805",
+    "service": "Elasticsearch",
+    "category": "Search",
+    "description": "Distributed search and analytics engine",
+    "tags": [
+      "java",
+      "search",
+      "big-data"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1526170209",
+    "service": "Kibana",
+    "category": "Search",
+    "description": "Elasticsearch visualization dashboard",
+    "tags": [
+      "javascript",
+      "visualization",
+      "elasticsearch"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1756365814",
+    "service": "Meilisearch",
+    "category": "Search",
+    "description": "Fast search API",
+    "tags": [
+      "rust",
+      "search",
+      "fast"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-401934945",
+    "service": "Solr",
+    "category": "Search",
+    "description": "Apache Solr search platform",
+    "tags": [
+      "java",
+      "search"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "625362614",
+    "service": "HashiCorp Vault",
+    "category": "Security",
+    "description": "Secrets management platform",
+    "tags": [
+      "go",
+      "secrets",
+      "enterprise"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1632760989",
+    "service": "Vaultwarden",
+    "category": "Security",
+    "description": "Bitwarden-compatible password manager",
+    "tags": [
+      "rust",
+      "password-manager",
+      "bitwarden"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1708240621",
+    "service": "ARL Asset Lighthouse",
+    "category": "Security Product",
+    "description": "ARL Asset Lighthouse (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1779611449",
+    "service": "AlienVault",
+    "category": "Security Product",
+    "description": "AlienVault (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1524374260",
+    "service": "Anquanbao",
+    "category": "Security Product",
+    "description": "Anquanbao WAF (安全宝)",
+    "tags": [
+      "chinese",
+      "waf",
+      "cloud"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1745552996",
+    "service": "Arbor Networks",
+    "category": "Security Product",
+    "description": "Arbor Networks (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-373674173",
+    "service": "Digital Keystone",
+    "category": "Security Product",
+    "description": "Digital Keystone (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1476335317",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "95271369",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-842192932",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "105083909",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "240606739",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "2121539357",
+    "service": "FireEye",
+    "category": "Security Product",
+    "description": "FireEye (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1776863739",
+    "service": "H3C SecPath O\u0026A",
+    "category": "Security Product",
+    "description": "H3C SecPath O\u0026A (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-919643663",
+    "service": "Hillstone Firewall",
+    "category": "Security Product",
+    "description": "Hillstone firewall (山石网科)",
+    "tags": [
+      "chinese",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-600183134",
+    "service": "IBM Guardium",
+    "category": "Security Product",
+    "description": "IBM Guardium (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1912808902",
+    "service": "IBM QRadar SOAR",
+    "category": "Security Product",
+    "description": "IBM QRadar SOAR (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1725856879",
+    "service": "Imperva DSF",
+    "category": "Security Product",
+    "description": "Imperva DSF (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1747722638",
+    "service": "Jinjing Threat Detection",
+    "category": "Security Product",
+    "description": "Jinjing Threat Detection (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1162630024",
+    "service": "JumpServer Bastion",
+    "category": "Security Product",
+    "description": "JumpServer Bastion (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1738727418",
+    "service": "KeepItSafe Console",
+    "category": "Security Product",
+    "description": "KeepItSafe Console (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "538585915",
+    "service": "Lenel",
+    "category": "Security Product",
+    "description": "Lenel (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "579239725",
+    "service": "Metasploit",
+    "category": "Security Product",
+    "description": "Metasploit (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1139788073",
+    "service": "Metasploit",
+    "category": "Security Product",
+    "description": "Metasploit (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1235192469",
+    "service": "Metasploit",
+    "category": "Security Product",
+    "description": "Metasploit (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-127886975",
+    "service": "Metasploit",
+    "category": "Security Product",
+    "description": "Metasploit (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "967636089",
+    "service": "MobileIron",
+    "category": "Security Product",
+    "description": "MobileIron (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "2086228042",
+    "service": "MobileIron",
+    "category": "Security Product",
+    "description": "MobileIron (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "545827989",
+    "service": "MobileIron",
+    "category": "Security Product",
+    "description": "MobileIron (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-524723557",
+    "service": "Palo Alto Cortex XSOAR",
+    "category": "Security Product",
+    "description": "Palo Alto Cortex XSOAR (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "727253975",
+    "service": "Paradox IP Module",
+    "category": "Security Product",
+    "description": "Paradox IP Module (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1630354993",
+    "service": "Proofpoint",
+    "category": "Security Product",
+    "description": "Proofpoint (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-747580443",
+    "service": "Qianxin Auto Pentest",
+    "category": "Security Product",
+    "description": "Qianxin Auto Pentest (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "1648521158",
+    "service": "Sangfor AF",
+    "category": "Security Product",
+    "description": "Sangfor firewall (深信服AF)",
+    "tags": [
+      "chinese",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "459900503",
+    "service": "Sangfor EDR",
+    "category": "Security Product",
+    "description": "Sangfor EDR (深信服EDR)",
+    "tags": [
+      "chinese",
+      "edr",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1688698891",
+    "service": "SpamExperts",
+    "category": "Security Product",
+    "description": "SpamExperts (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-1162730477",
+    "service": "Vanderbilt SPC",
+    "category": "Security Product",
+    "description": "Vanderbilt SPC (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "2119138714",
+    "service": "Venustech WAF",
+    "category": "Security Product",
+    "description": "Venustech WAF (启明星辰WAF)",
+    "tags": [
+      "chinese",
+      "waf",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-968234332",
+    "service": "Wangfang G01",
+    "category": "Security Product",
+    "description": "Wangfang G01 (Security Product)",
+    "source": "community"
+  },
+  {
+    "hash": "-333791179",
+    "service": "Adobe Campaign Classic",
+    "category": "Server",
+    "description": "Adobe Campaign Classic (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-208326418",
+    "service": "Apache HTTPD",
+    "category": "Server",
+    "description": "Apache HTTP Server",
+    "tags": [
+      "webserver",
+      "popular"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-297069493",
+    "service": "Apache Tomcat",
+    "category": "Server",
+    "description": "Apache Tomcat Java servlet container",
+    "tags": [
+      "java",
+      "webserver",
+      "servlet"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "494866796",
+    "service": "Aplikasi",
+    "category": "Server",
+    "description": "Aplikasi (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "743365239",
+    "service": "Atlassian",
+    "category": "Server",
+    "description": "Atlassian (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "981867722",
+    "service": "Atlassian Jira",
+    "category": "Server",
+    "description": "Atlassian Jira (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1581907337",
+    "service": "Atlassian Jira",
+    "category": "Server",
+    "description": "Atlassian Jira (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "552727997",
+    "service": "Atlassian Jira",
+    "category": "Server",
+    "description": "Atlassian Jira (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "855273746",
+    "service": "Atlassian Jira",
+    "category": "Server",
+    "description": "Atlassian Jira (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "705143395",
+    "service": "Atlassian Jira Service Management",
+    "category": "Server",
+    "description": "Atlassian Jira Service Management (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1806014473",
+    "service": "Atlassian Statuspage",
+    "category": "Server",
+    "description": "Atlassian Statuspage (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "475379699",
+    "service": "Axcient Replibit",
+    "category": "Server",
+    "description": "Axcient Replibit (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "829321644",
+    "service": "BOMGAR Support Portal",
+    "category": "Server",
+    "description": "BOMGAR Support Portal (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-532394952",
+    "service": "CX Dashboard",
+    "category": "Server",
+    "description": "CX Dashboard (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1738184811",
+    "service": "Cacaoweb",
+    "category": "Server",
+    "description": "Cacaoweb (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1174640225",
+    "service": "Caddy",
+    "category": "Server",
+    "description": "Web server with automatic HTTPS",
+    "tags": [
+      "go",
+      "https",
+      "webserver"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "2128230701",
+    "service": "Chainpoint",
+    "category": "Server",
+    "description": "Chainpoint (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-646322113",
+    "service": "Cisco Conference Room",
+    "category": "Server",
+    "description": "Cisco Conference Room (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-342262483",
+    "service": "Combivox",
+    "category": "Server",
+    "description": "Combivox (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1153950306",
+    "service": "Dell",
+    "category": "Server",
+    "description": "Dell (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "509789953",
+    "service": "Farming Simulator",
+    "category": "Server",
+    "description": "Farming Simulator (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1319699698",
+    "service": "Form.io",
+    "category": "Server",
+    "description": "Form.io (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "2059618623",
+    "service": "HP iLO",
+    "category": "Server",
+    "description": "HP iLO (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "926501571",
+    "service": "Handle Proxy",
+    "category": "Server",
+    "description": "Handle Proxy (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-556918553",
+    "service": "Huilin ICP Filing System",
+    "category": "Server",
+    "description": "Huilin ICP Filing System (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1726027799",
+    "service": "IBM Server",
+    "category": "Server",
+    "description": "IBM Server (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "903341690",
+    "service": "IIS",
+    "category": "Server",
+    "description": "Microsoft Internet Information Services",
+    "tags": [
+      "microsoft",
+      "webserver"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "896412703",
+    "service": "IW",
+    "category": "Server",
+    "description": "IW (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-450254253",
+    "service": "Idera",
+    "category": "Server",
+    "description": "Idera (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "325583172",
+    "service": "Liuliangtong Platform",
+    "category": "Server",
+    "description": "Liuliangtong Platform (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-252149748",
+    "service": "MapGIS Server Manager",
+    "category": "Server",
+    "description": "MapGIS Server Manager (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "603314722",
+    "service": "Nginx",
+    "category": "Server",
+    "description": "High-performance web server and proxy",
+    "tags": [
+      "webserver",
+      "proxy",
+      "popular"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1234311970",
+    "service": "Onera",
+    "category": "Server",
+    "description": "Onera (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-609520537",
+    "service": "OpenGeo Suite",
+    "category": "Server",
+    "description": "OpenGeo Suite (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1395430956",
+    "service": "OpenResty",
+    "category": "Server",
+    "description": "Nginx+Lua web platform",
+    "tags": [
+      "nginx",
+      "lua",
+      "proxy"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "246145559",
+    "service": "Parse Dashboard",
+    "category": "Server",
+    "description": "Parse Dashboard (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1492966240",
+    "service": "RADIX",
+    "category": "Server",
+    "description": "RADIX (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1117165781",
+    "service": "SimpleHelp Remote Support",
+    "category": "Server",
+    "description": "SimpleHelp Remote Support (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-2055778861",
+    "service": "Subdomain Distribution System",
+    "category": "Server",
+    "description": "Subdomain Distribution System (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1740191553",
+    "service": "SuperMap iServer Web Manager",
+    "category": "Server",
+    "description": "SuperMap iServer Web Manager (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1734573358",
+    "service": "TC-Group",
+    "category": "Server",
+    "description": "TC-Group (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1632780968",
+    "service": "Univ Toulouse",
+    "category": "Server",
+    "description": "Univ Toulouse (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-1697334194",
+    "service": "Univention Portal",
+    "category": "Server",
+    "description": "Univention Portal (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-956471263",
+    "service": "Web Client Pro",
+    "category": "Server",
+    "description": "Web Client Pro (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-291579889",
+    "service": "WebSockets Test Page",
+    "category": "Server",
+    "description": "WebSockets Test Page (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "-803134384",
+    "service": "WildFly",
+    "category": "Server",
+    "description": "JBoss/WildFly application server",
+    "tags": [
+      "java",
+      "jboss",
+      "application-server"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1275226814",
+    "service": "XAMPP",
+    "category": "Server",
+    "description": "Apache+MySQL+PHP development stack",
+    "tags": [
+      "php",
+      "development",
+      "stack"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-178685903",
+    "service": "Yasni",
+    "category": "Server",
+    "description": "Yasni (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "1629518721",
+    "service": "macOS Server",
+    "category": "Server",
+    "description": "macOS Server (Server)",
+    "source": "community"
+  },
+  {
+    "hash": "552592949",
+    "service": "ASUS AiCloud",
+    "category": "Storage",
+    "description": "ASUS AiCloud (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "1678170702",
+    "service": "ASUSTOR NAS",
+    "category": "Storage",
+    "description": "ASUSTOR NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "1088229202",
+    "service": "ASUSTOR NAS",
+    "category": "Storage",
+    "description": "ASUSTOR NAS device",
+    "tags": [
+      "nas"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1241049726",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-600508822",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-613216179",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "656868270",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-1656695885",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "322531336",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "331870709",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-689902428",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "998138196",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-2056503929",
+    "service": "Iomega NAS",
+    "category": "Storage",
+    "description": "Iomega NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-1277814690",
+    "service": "LaCie NAS",
+    "category": "Storage",
+    "description": "LaCie NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-842192628",
+    "service": "MinIO",
+    "category": "Storage",
+    "description": "S3-compatible object storage",
+    "tags": [
+      "go",
+      "s3",
+      "object-storage"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-137295400",
+    "service": "Netgear ReadyNAS",
+    "category": "Storage",
+    "description": "Netgear ReadyNAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-831781525",
+    "service": "Nextcloud",
+    "category": "Storage",
+    "description": "Self-hosted cloud file sharing",
+    "tags": [
+      "php",
+      "cloud",
+      "file-sharing"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-693082538",
+    "service": "OpenMediaVault NAS",
+    "category": "Storage",
+    "description": "OpenMediaVault NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "1387795314",
+    "service": "QNAP NAS",
+    "category": "Storage",
+    "description": "QNAP NAS device",
+    "tags": [
+      "nas",
+      "qnap"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1122687333",
+    "service": "Seafile",
+    "category": "Storage",
+    "description": "File syncing and sharing",
+    "tags": [
+      "python",
+      "cloud",
+      "file-sharing"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-12700016",
+    "service": "Seafile",
+    "category": "Storage",
+    "description": "Seafile (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "240136437",
+    "service": "Seagate NAS",
+    "category": "Storage",
+    "description": "Seagate NAS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "1210969935",
+    "service": "SeaweedFS",
+    "category": "Storage",
+    "description": "SeaweedFS (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "149371702",
+    "service": "Synology DiskStation",
+    "category": "Storage",
+    "description": "Synology NAS device",
+    "tags": [
+      "nas",
+      "synology"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1632760989",
+    "service": "TrueNAS",
+    "category": "Storage",
+    "description": "TrueNAS/FreeNAS storage server",
+    "tags": [
+      "nas",
+      "freenas",
+      "zfs"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "459900503",
+    "service": "Western Digital My Cloud",
+    "category": "Storage",
+    "description": "WD My Cloud NAS",
+    "tags": [
+      "nas",
+      "wd"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1616115760",
+    "service": "ownCloud",
+    "category": "Storage",
+    "description": "ownCloud (Storage)",
+    "source": "community"
+  },
+  {
+    "hash": "-1642532491",
+    "service": "ownCloud",
+    "category": "Storage",
+    "description": "Open-source file sharing",
+    "tags": [
+      "php",
+      "cloud",
+      "file-sharing"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1240222446",
+    "service": "Zhejiang Uniview Technologies Co.,Ltd.",
+    "category": "UNV IP camera / NVR – DVR",
+    "description": "Zhejiang Uniview Technologies Co.,Ltd. (UNV IP camera / NVR – DVR)",
+    "source": "community"
+  },
+  {
+    "hash": "667017222",
+    "service": "Atlassian Bitbucket",
+    "category": "VCS",
+    "description": "Atlassian Git hosting",
+    "tags": [
+      "atlassian",
+      "git"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-986090590",
+    "service": "SourceHut",
+    "category": "VCS",
+    "description": "Lightweight Git hosting",
+    "tags": [
+      "git",
+      "lightweight"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "420473080",
+    "service": "Exostar MAG",
+    "category": "VPN",
+    "description": "Exostar MAG (VPN)",
+    "source": "community"
+  },
+  {
+    "hash": "1668183994",
+    "service": "H3C Firewall",
+    "category": "VPN",
+    "description": "H3C firewall (华三防火墙)",
+    "tags": [
+      "chinese",
+      "firewall",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "-1148190371",
+    "service": "OPNsense",
+    "category": "VPN",
+    "description": "Open-source firewall (OPNsense)",
+    "tags": [
+      "firewall",
+      "bsd"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-740477808",
+    "service": "OpenVPN",
+    "category": "VPN",
+    "description": "Open-source VPN server",
+    "tags": [
+      "vpn",
+      "tunnel"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "396533629",
+    "service": "OpenVPN Access Server",
+    "category": "VPN",
+    "description": "OpenVPN Access Server",
+    "tags": [
+      "vpn",
+      "openvpn"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-675839242",
+    "service": "OpenWrt LuCI",
+    "category": "VPN",
+    "description": "OpenWrt router web interface",
+    "tags": [
+      "router",
+      "openwrt",
+      "linux"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1525950034",
+    "service": "Ruijie SSL VPN",
+    "category": "VPN",
+    "description": "Ruijie SSL VPN (VPN)",
+    "source": "community"
+  },
+  {
+    "hash": "1251810444",
+    "service": "Sangfor SSL VPN",
+    "category": "VPN",
+    "description": "Sangfor SSL VPN (深信服SSL VPN)",
+    "tags": [
+      "chinese",
+      "vpn",
+      "enterprise"
+    ],
+    "source": "fofa"
+  },
+  {
+    "hash": "1045696447",
+    "service": "Sophos VPN Portal",
+    "category": "VPN",
+    "description": "Sophos VPN Portal (VPN)",
+    "source": "community"
+  },
+  {
+    "hash": "-590892202",
+    "service": "Surfilter SSL VPN Portal",
+    "category": "VPN",
+    "description": "Surfilter SSL VPN Portal (VPN)",
+    "source": "community"
+  },
+  {
+    "hash": "1235070469",
+    "service": "Synology VPN Plus",
+    "category": "VPN",
+    "description": "Synology VPN Plus (VPN)",
+    "source": "community"
+  },
+  {
+    "hash": "1405460984",
+    "service": "pfSense",
+    "category": "VPN",
+    "description": "Open-source firewall/router (pfSense)",
+    "tags": [
+      "firewall",
+      "bsd",
+      "vpn"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1272756243",
+    "service": "Citrix Virtual Desktop",
+    "category": "Virtualization",
+    "description": "Citrix Virtual Desktop (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-1814887000",
+    "service": "Docker",
+    "category": "Virtualization",
+    "description": "Docker (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1937209448",
+    "service": "Docker",
+    "category": "Virtualization",
+    "description": "Docker (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-1203021870",
+    "service": "Kubeflow",
+    "category": "Virtualization",
+    "description": "Kubeflow (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "786533217",
+    "service": "OpenStack",
+    "category": "Virtualization",
+    "description": "OpenStack (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-923088984",
+    "service": "OpenStack",
+    "category": "Virtualization",
+    "description": "OpenStack (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1232596212",
+    "service": "OpenStack",
+    "category": "Virtualization",
+    "description": "OpenStack (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-1424036600",
+    "service": "Portainer",
+    "category": "Virtualization",
+    "description": "Portainer (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1135165421",
+    "service": "Proxmox VE",
+    "category": "Virtualization",
+    "description": "Proxmox Virtual Environment",
+    "tags": [
+      "proxmox",
+      "kvm",
+      "virtualization"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "213144638",
+    "service": "Proxmox VE",
+    "category": "Virtualization",
+    "description": "Proxmox VE (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-1041180225",
+    "service": "QNAP Virtualization Station",
+    "category": "Virtualization",
+    "description": "QNAP Virtualization Station (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1895360511",
+    "service": "VMware Horizon",
+    "category": "Virtualization",
+    "description": "VMware Horizon (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-1255992602",
+    "service": "VMware Horizon",
+    "category": "Virtualization",
+    "description": "VMware Horizon (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "-991123252",
+    "service": "VMware Horizon",
+    "category": "Virtualization",
+    "description": "VMware Horizon (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1521142546",
+    "service": "VMware Horizon",
+    "category": "Virtualization",
+    "description": "VMware Horizon (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1182206475",
+    "service": "VMware Horizon",
+    "category": "Virtualization",
+    "description": "VMware Horizon (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "1642701741",
+    "service": "VMware Secure File Transfer",
+    "category": "Virtualization",
+    "description": "VMware Secure File Transfer (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "45180380",
+    "service": "VMware vCenter",
+    "category": "Virtualization",
+    "description": "VMware vCenter server",
+    "tags": [
+      "vmware",
+      "enterprise",
+      "virtualization"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1252031962",
+    "service": "Xen Orchestra",
+    "category": "Virtualization",
+    "description": "Xen Orchestra web UI",
+    "tags": [
+      "xen",
+      "virtualization"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1142582922",
+    "service": "Zijie Cloud Desktop",
+    "category": "Virtualization",
+    "description": "Zijie Cloud Desktop (Virtualization)",
+    "source": "community"
+  },
+  {
+    "hash": "131939183",
+    "service": "BookStack",
+    "category": "Wiki",
+    "description": "Documentation/wiki platform",
+    "tags": [
+      "php",
+      "wiki",
+      "documentation"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-630493013",
+    "service": "DokuWiki",
+    "category": "Wiki",
+    "description": "DokuWiki (Wiki)",
+    "source": "community"
+  },
+  {
+    "hash": "-528543897",
+    "service": "DokuWiki",
+    "category": "Wiki",
+    "description": "File-based wiki engine",
+    "tags": [
+      "php",
+      "wiki",
+      "file-based"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "1594377221",
+    "service": "MediaWiki",
+    "category": "Wiki",
+    "description": "Wikipedia's wiki engine",
+    "tags": [
+      "php",
+      "wiki",
+      "wikipedia"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-960317875",
+    "service": "Outline",
+    "category": "Wiki",
+    "description": "Team knowledge base",
+    "tags": [
+      "nodejs",
+      "wiki",
+      "team"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1969934080",
+    "service": "ShowDoc",
+    "category": "Wiki",
+    "description": "ShowDoc (Wiki)",
+    "source": "community"
+  },
+  {
+    "hash": "1985721424",
+    "service": "Wiki.js",
+    "category": "Wiki",
+    "description": "Modern wiki engine",
+    "tags": [
+      "nodejs",
+      "wiki",
+      "modern"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "-1347531381",
+    "service": "Airflow",
+    "category": "Workflow",
+    "description": "Apache Airflow workflow scheduler",
+    "tags": [
+      "python",
+      "scheduler",
+      "pipeline"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "-1913142256",
+    "service": "Apache NiFi",
+    "category": "Workflow",
+    "description": "Data flow automation",
+    "tags": [
+      "java",
+      "data-flow"
+    ],
+    "source": "shodan"
+  },
+  {
+    "hash": "781210016",
+    "service": "Dagster",
+    "category": "Workflow",
+    "description": "Data orchestration platform",
+    "tags": [
+      "python",
+      "data",
+      "orchestration"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1807113162",
+    "service": "Prefect",
+    "category": "Workflow",
+    "description": "Data workflow orchestration",
+    "tags": [
+      "python",
+      "workflow",
+      "orchestration"
+    ],
+    "source": "community"
+  },
+  {
+    "hash": "1771444498",
+    "service": "n8n",
+    "category": "Workflow",
+    "description": "Workflow automation platform",
+    "tags": [
+      "nodejs",
+      "automation",
+      "low-code"
+    ],
+    "source": "shodan"
+  }
+]

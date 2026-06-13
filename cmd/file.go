@@ -4,27 +4,28 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cyberspacesec/go-iconhash/pkg/hasher"
-	"github.com/cyberspacesec/go-iconhash/pkg/util"
+	"github.com/cyberspacesec/iconhash-skills/pkg/hasher"
+	"github.com/cyberspacesec/iconhash-skills/pkg/util"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
-// NewFileCommand 创建文件命令
+// NewFileCommand creates the file command
 func NewFileCommand() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "file [filepath]",
 		Short: "Generate hash from a file",
 		Long: `Generate a favicon hash from a local file.
-		
+
 This command will read the specified favicon file and calculate its hash.
-The hash can be formatted for use with search engines like Fofa or Shodan.
+The hash can be formatted for use with search engines like Fofa, Shodan, Censys,
+Quake, ZoomEye, and Hunter.
 
 Examples:
   iconhash file favicon.ico
-  iconhash file -f /path/to/favicon.ico --shodan
-  iconhash file icon.png --uint32`,
-		Run: runFile,
+  iconhash file -f /path/to/favicon.ico --engine shodan
+  iconhash file icon.png --uint32 --engine fofa`,
+		RunE: runFile,
 		Args: func(cmd *cobra.Command, args []string) error {
 			// If filepath is provided as positional arg, set it in the flags
 			if len(args) > 0 {
@@ -49,11 +50,13 @@ Examples:
 		},
 	}
 
+	SilenceUsageOnError(cmd)
+
 	return cmd
 }
 
 // runFile handles the file command execution
-func runFile(cmd *cobra.Command, args []string) {
+func runFile(cmd *cobra.Command, args []string) error {
 	// Create a new hasher with the options from root command
 	options := &hasher.HashOptions{
 		UseUint32:          Uint32Flag,
@@ -65,35 +68,26 @@ func runFile(cmd *cobra.Command, args []string) {
 
 	// Debug info if enabled
 	if Debug {
-		fmt.Fprintf(os.Stderr, "🔍 File: %s\n", FilePath)
-		fmt.Fprintf(os.Stderr, "🔧 Options: uint32=%v\n", options.UseUint32)
+		fmt.Fprintf(cmd.ErrOrStderr(), "🔍 File: %s\n", FilePath)
+		fmt.Fprintf(cmd.ErrOrStderr(), "🔧 Options: uint32=%v\n", options.UseUint32)
 	}
 
 	// Read file data
-	fmt.Fprintf(os.Stderr, "📂 Reading file %s...\n", FilePath)
+	fmt.Fprintf(cmd.ErrOrStderr(), "📂 Reading file %s...\n", FilePath)
 	fileData, err := os.ReadFile(FilePath)
 	if err != nil {
-		color.Red("❌ Error reading file: %v", err)
-		os.Exit(1)
+		return wrapError("error reading file: %w", err)
 	}
 
 	// Calculate hash
-	fmt.Fprintf(os.Stderr, "🧮 Calculating hash...\n")
+	fmt.Fprintf(cmd.ErrOrStderr(), "🧮 Calculating hash...\n")
 	hash, err := h.HashFromBytes(fileData)
 	if err != nil {
-		color.Red("❌ Error calculating hash: %v", err)
-		os.Exit(1)
+		return wrapError("error calculating hash: %w", err)
 	}
 
-	// Determine output format
-	var format util.OutputFormat
-	if ShodanFormat {
-		format = util.FormatShodan
-	} else if FofaFormat {
-		format = util.FormatFofa
-	} else {
-		format = util.FormatPlain
-	}
+	// Get format from --engine flag
+	format := getEngineFormat()
 
 	// Format the hash
 	formatted := util.FormatHash(hash, format)
@@ -111,4 +105,6 @@ func runFile(cmd *cobra.Command, args []string) {
 		boldCyan.Printf("Formatted: ")
 		fmt.Println(formatted)
 	}
+
+	return nil
 }

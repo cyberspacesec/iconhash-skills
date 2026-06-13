@@ -1,10 +1,7 @@
 package mcp
 
 import (
-	"strings"
 	"testing"
-
-	"github.com/cyberspacesec/go-iconhash/pkg/util"
 )
 
 func TestNewRequest(t *testing.T) {
@@ -122,98 +119,140 @@ func TestResponseComplete(t *testing.T) {
 	}
 }
 
-// MockHandler is a mock implementation of Handler for testing
-type MockHandler struct {
-	logger *util.Logger
-}
+func TestHandlerTools(t *testing.T) {
+	handler := NewHandler(false)
+	tools := handler.Tools()
 
-// Process implements a mock version of the Process method
-func (h *MockHandler) Process(req *Request) (*Response, error) {
-	// Validate the request
-	if err := req.Validate(); err != nil {
-		return nil, err
+	if len(tools) == 0 {
+		t.Fatal("Tools() returned empty list")
 	}
 
-	// Create a response
-	resp := NewResponse()
-
-	// Extract the last user message
-	var lastUserMessage string
-	for i := len(req.Context.Messages) - 1; i >= 0; i-- {
-		msg := req.Context.Messages[i]
-		if msg.Role == "user" {
-			lastUserMessage = msg.Content
-			break
+	expectedTools := map[string]bool{
+		"iconhash_url":      false,
+		"iconhash_base64":   false,
+		"iconhash_file":     false,
+		"iconhash_discover": false,
+		"iconhash_lookup":   false,
+	}
+	for _, tool := range tools {
+		if _, ok := expectedTools[tool.Name]; ok {
+			expectedTools[tool.Name] = true
 		}
 	}
-
-	if lastUserMessage == "" {
-		resp.Message.Content = "Please provide a URL, file path, or base64 data to calculate the favicon hash."
-		resp.Complete()
-		return resp, nil
+	for name, found := range expectedTools {
+		if !found {
+			t.Errorf("Expected tool %q not found in Tools()", name)
+		}
 	}
-
-	// Process based on content
-	if strings.Contains(strings.ToLower(lastUserMessage), "help") {
-		resp.Message.Content = "IconHash - Favicon Hash Calculator: Help text"
-	} else if strings.Contains(strings.ToLower(lastUserMessage), "random text") {
-		resp.Message.Content = "Error: I couldn't detect a URL, valid base64 data, or a help request in your message."
-	} else {
-		resp.Message.Content = "Mocked response for: " + lastUserMessage
-	}
-
-	resp.Complete()
-	return resp, nil
 }
 
-func TestHandlerProcess(t *testing.T) {
-	// Create a mock handler for testing
-	mockHandler := &MockHandler{
-		logger: util.NewLogger(false),
-	}
+func TestCallTool(t *testing.T) {
+	handler := NewHandler(false)
 
+	t.Run("unknown tool", func(t *testing.T) {
+		result := handler.CallTool("nonexistent", nil)
+		if result == nil {
+			t.Fatal("Expected non-nil result")
+		}
+		if !result.IsError {
+			t.Error("Expected IsError=true for unknown tool")
+		}
+	})
+
+	t.Run("iconhash_url with missing url", func(t *testing.T) {
+		result := handler.CallTool("iconhash_url", map[string]interface{}{})
+		if !result.IsError {
+			t.Error("Expected error for missing url parameter")
+		}
+	})
+
+	t.Run("iconhash_file with missing path", func(t *testing.T) {
+		result := handler.CallTool("iconhash_file", map[string]interface{}{})
+		if !result.IsError {
+			t.Error("Expected error for missing path parameter")
+		}
+	})
+
+	t.Run("iconhash_discover with missing url", func(t *testing.T) {
+		result := handler.CallTool("iconhash_discover", map[string]interface{}{})
+		if !result.IsError {
+			t.Error("Expected error for missing url parameter")
+		}
+	})
+
+	t.Run("iconhash_lookup with missing hash", func(t *testing.T) {
+		result := handler.CallTool("iconhash_lookup", map[string]interface{}{})
+		if !result.IsError {
+			t.Error("Expected error for missing hash parameter")
+		}
+	})
+
+	t.Run("iconhash_lookup with known hash", func(t *testing.T) {
+		result := handler.CallTool("iconhash_lookup", map[string]interface{}{
+			"hash": "-305179312",
+		})
+		if result.IsError {
+			t.Error("Expected success for known hash lookup")
+		}
+		if len(result.Content) == 0 {
+			t.Error("Expected content in lookup result")
+		}
+	})
+
+	t.Run("iconhash_lookup with unknown hash", func(t *testing.T) {
+		result := handler.CallTool("iconhash_lookup", map[string]interface{}{
+			"hash": "999999999",
+		})
+		if result.IsError {
+			t.Error("Expected success (not error) for unknown hash lookup, just no matches")
+		}
+	})
+
+	t.Run("iconhash_base64 with missing data", func(t *testing.T) {
+		result := handler.CallTool("iconhash_base64", map[string]interface{}{})
+		if !result.IsError {
+			t.Error("Expected error for missing data parameter")
+		}
+	})
+}
+
+func TestFormatArg(t *testing.T) {
 	tests := []struct {
-		name           string
-		message        string
-		expectContains string
-		expectError    bool
+		name     string
+		args     map[string]interface{}
+		expected string
 	}{
-		{
-			name:           "Help request",
-			message:        "Help me use this tool",
-			expectContains: "IconHash - Favicon Hash Calculator",
-			expectError:    false,
-		},
-		{
-			name:           "Invalid input",
-			message:        "This is just random text",
-			expectContains: "Error:",
-			expectError:    false,
-		},
+		{"default fofa", map[string]interface{}{}, "fofa"},
+		{"plain format", map[string]interface{}{"format": "plain"}, "plain"},
+		{"shodan format", map[string]interface{}{"format": "shodan"}, "shodan"},
+		{"censys format", map[string]interface{}{"format": "censys"}, "censys"},
+		{"quake format", map[string]interface{}{"format": "quake"}, "quake"},
+		{"zoomeye format", map[string]interface{}{"format": "zoomeye"}, "zoomeye"},
+		{"hunter format", map[string]interface{}{"format": "hunter"}, "hunter"},
 	}
-
-	for _, test := range tests {
-		t.Run(test.name, func(t *testing.T) {
-			req := NewRequest()
-			req.AddMessage("user", test.message)
-
-			resp, err := mockHandler.Process(req)
-
-			if test.expectError {
-				if err == nil {
-					t.Error("Expected error, got nil")
-				}
-				return
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			format := formatArg(tt.args, "format")
+			// Convert format to string for comparison
+			var got string
+			switch format {
+			case 0:
+				got = "plain"
+			case 1:
+				got = "fofa"
+			case 2:
+				got = "shodan"
+			case 3:
+				got = "censys"
+			case 4:
+				got = "quake"
+			case 5:
+				got = "zoomeye"
+			case 6:
+				got = "hunter"
 			}
-
-			if err != nil {
-				t.Errorf("Expected no error, got %v", err)
-				return
-			}
-
-			if !strings.Contains(resp.Message.Content, test.expectContains) {
-				t.Errorf("Expected response to contain '%s', got '%s'",
-					test.expectContains, resp.Message.Content)
+			if got != tt.expected {
+				t.Errorf("formatArg() = %s, expected %s", got, tt.expected)
 			}
 		})
 	}

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/cyberspacesec/go-iconhash/cmd"
+	"github.com/cyberspacesec/iconhash-skills/cmd"
 )
 
 func main() {

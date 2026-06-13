@@ -1,6 +1,8 @@
 package hasher
 
 import (
+	"bytes"
+	"context"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -30,6 +32,10 @@ func TestDefaultOptions(t *testing.T) {
 
 	if options.UserAgent == "" {
 		t.Error("DefaultOptions().UserAgent is empty")
+	}
+
+	if options.MaxIconSize != 10<<20 {
+		t.Errorf("DefaultOptions().MaxIconSize = %v, expected 10MB", options.MaxIconSize)
 	}
 }
 
@@ -68,7 +74,6 @@ func TestNew(t *testing.T) {
 func TestHashFromURL(t *testing.T) {
 	// Create a test server
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		// Send a simple favicon byte array
 		w.Header().Set("Content-Type", "image/x-icon")
 		w.Write([]byte{0, 0, 1, 0, 1, 0, 16, 16})
 	}))
@@ -77,7 +82,7 @@ func TestHashFromURL(t *testing.T) {
 	hasher := New(nil)
 
 	// Test successful URL hash
-	hash, err := hasher.HashFromURL(server.URL)
+	hash, err := hasher.HashFromURL(context.Background(), server.URL)
 	if err != nil {
 		t.Errorf("HashFromURL(%q) returned error: %v", server.URL, err)
 	}
@@ -87,9 +92,17 @@ func TestHashFromURL(t *testing.T) {
 	}
 
 	// Test with non-existent URL
-	_, err = hasher.HashFromURL("http://non-existent-url.example")
+	_, err = hasher.HashFromURL(context.Background(), "http://non-existent-url.example")
 	if err == nil {
 		t.Error("HashFromURL with non-existent URL did not return error")
+	}
+
+	// Test context cancellation
+	ctx, cancel := context.WithCancel(context.Background())
+	cancel()
+	_, err = hasher.HashFromURL(ctx, server.URL)
+	if err == nil {
+		t.Error("HashFromURL with cancelled context did not return error")
 	}
 }
 
@@ -152,6 +165,92 @@ func TestHashFromBase64(t *testing.T) {
 	if prefixHash != hash {
 		t.Errorf("HashFromBase64() with prefix = %q, expected %q", prefixHash, hash)
 	}
+
+	// Test with invalid base64
+	_, err = hasher.HashFromBase64("!!!invalid!!!")
+	if err == nil {
+		t.Error("HashFromBase64() should return error for invalid base64")
+	}
+}
+
+func TestHashFromBytes(t *testing.T) {
+	hasher := New(nil)
+
+	data := []byte{0, 0, 1, 0, 1, 0, 16, 16}
+
+	hash, err := hasher.HashFromBytes(data)
+	if err != nil {
+		t.Errorf("HashFromBytes() returned error: %v", err)
+	}
+
+	if hash == "" {
+		t.Error("HashFromBytes() returned empty hash")
+	}
+
+	// Same input should produce same hash
+	hash2, err := hasher.HashFromBytes(data)
+	if err != nil {
+		t.Errorf("HashFromBytes() second call returned error: %v", err)
+	}
+
+	if hash != hash2 {
+		t.Errorf("HashFromBytes() is not deterministic: %s vs %s", hash, hash2)
+	}
+}
+
+func TestHashFromReader(t *testing.T) {
+	data := []byte{0, 0, 1, 0, 1, 0, 16, 16}
+	h := New(nil)
+
+	hash1, err := h.HashFromReader(bytes.NewReader(data))
+	if err != nil {
+		t.Errorf("HashFromReader() error: %v", err)
+	}
+
+	hash2, err := h.HashFromBytes(data)
+	if err != nil {
+		t.Errorf("HashFromBytes() error: %v", err)
+	}
+
+	if hash1 != hash2 {
+		t.Errorf("HashFromReader and HashFromBytes should produce same result: %s vs %s", hash1, hash2)
+	}
+}
+
+func TestHashFromReaderWithOption(t *testing.T) {
+	data := []byte{0, 0, 1, 0, 1, 0, 16, 16}
+	h := New(nil)
+
+	hash1, err := h.HashFromReaderWithOption(bytes.NewReader(data), false)
+	if err != nil {
+		t.Errorf("HashFromReaderWithOption(false) error: %v", err)
+	}
+
+	hash2, err := h.HashFromReaderWithOption(bytes.NewReader(data), true)
+	if err != nil {
+		t.Errorf("HashFromReaderWithOption(true) error: %v", err)
+	}
+
+	if hash1 == hash2 && hash1[0] == '-' {
+		t.Errorf("uint32 hash should differ from negative int32 hash: %s vs %s", hash1, hash2)
+	}
+}
+
+func TestGetContentFromURLNon200(t *testing.T) {
+	// Create a test server that returns 404
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.WriteHeader(http.StatusNotFound)
+	}))
+	defer server.Close()
+
+	hasher := New(nil)
+	_, err := hasher.HashFromURL(context.Background(), server.URL)
+	if err == nil {
+		t.Error("HashFromURL() should return error for 404 response")
+	}
+	if !strings.Contains(err.Error(), "404") {
+		t.Errorf("Error should mention status code 404, got: %v", err)
+	}
 }
 
 func TestFormatBase64WithNewlines(t *testing.T) {
@@ -199,5 +298,65 @@ func TestCalculateHash(t *testing.T) {
 	if int32Hash[0] != '-' && int32Hash == uint32Hash {
 		t.Errorf("int32Hash (%s) and uint32Hash (%s) should be different for negative numbers",
 			int32Hash, uint32Hash)
+	}
+}
+
+func TestWithOption(t *testing.T) {
+	h := New(&HashOptions{UseUint32: false})
+
+	testData := []byte("test data")
+
+	// Default: int32
+	hash1, err := h.calculateHashWithOption(testData, false)
+	if err != nil {
+		t.Fatalf("calculateHashWithOption(false) returned error: %v", err)
+	}
+
+	// With uint32
+	hash2, err := h.calculateHashWithOption(testData, true)
+	if err != nil {
+		t.Fatalf("calculateHashWithOption(true) returned error: %v", err)
+	}
+
+	if hash1 == hash2 && hash1[0] == '-' {
+		t.Errorf("uint32 hash should differ from negative int32 hash: %s vs %s", hash1, hash2)
+	}
+
+	// Verify WithOption methods work end-to-end
+	_, err = h.HashFromBytesWithOption(testData, false)
+	if err != nil {
+		t.Fatalf("HashFromBytesWithOption returned error: %v", err)
+	}
+
+	_, err = h.HashFromBytesWithOption(testData, true)
+	if err != nil {
+		t.Fatalf("HashFromBytesWithOption(true) returned error: %v", err)
+	}
+}
+
+func TestCustomHTTPClient(t *testing.T) {
+	// Create a test server
+	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "image/x-icon")
+		w.Write([]byte{0, 0, 1, 0, 1, 0, 16, 16})
+	}))
+	defer server.Close()
+
+	customClient := server.Client()
+	options := &HashOptions{
+		HTTPClient: customClient,
+	}
+
+	h := New(options)
+	if h.httpClient != customClient {
+		t.Error("New() with custom HTTPClient should use the provided client")
+	}
+
+	hash, err := h.HashFromURL(context.Background(), server.URL)
+	if err != nil {
+		t.Errorf("HashFromURL with custom HTTPClient returned error: %v", err)
+	}
+	if hash == "" {
+		t.Error("HashFromURL with custom HTTPClient returned empty hash")
 	}
 }

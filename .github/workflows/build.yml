@@ -1,52 +1,161 @@
-name: Build and Test
+name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  build:
-    name: Build and Test
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        build-mode: [lite, full]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Download dependencies
+        run: go mod download
+
+      - name: Verify module
+        run: go mod verify
+
+      - name: Run go vet
+        run: go vet ./...
+
+      - name: Run tests (lite mode)
+        if: matrix.build-mode == 'lite'
+        run: go test -v -race -coverprofile=coverage.out ./...
+
+      - name: Run tests (full mode)
+        if: matrix.build-mode == 'full'
+        run: go test -v -race -tags embed_fingerprints -coverprofile=coverage.out ./...
+
+      - name: Upload coverage
+        if: matrix.build-mode == 'lite'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.out
+
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.21'
-          
-      - name: Check out code
+      - name: Checkout
         uses: actions/checkout@v4
-        
-      - name: Get dependencies
-        run: go mod download
-        
-      - name: Run tests
-        run: go test -v ./...
-        
-      - name: Build
-        run: go build -v
-        
-  docker:
-    name: Build Docker Image
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Run gofmt check
+        run: |
+          output=$(gofmt -l .)
+          if [ -n "$output" ]; then
+            echo "Files not formatted with gofmt:"
+            echo "$output"
+            exit 1
+          fi
+
+      - name: Run goimports check
+        run: |
+          go install golang.org/x/tools/cmd/goimports@latest
+          output=$(goimports -l .)
+          if [ -n "$output" ]; then
+            echo "Files not formatted with goimports:"
+            echo "$output"
+            exit 1
+          fi
+
+  build:
+    name: Build (${{ matrix.goos }}/${{ matrix.goarch }}/${{ matrix.build-mode }})
     runs-on: ubuntu-latest
-    needs: build
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        goos: [linux, darwin, windows, freebsd]
+        goarch: [amd64, arm64, "386", arm, riscv64]
+        build-mode: [lite, full]
+        exclude:
+          # macOS only supports amd64 and arm64
+          - goos: darwin
+            goarch: "386"
+          - goos: darwin
+            goarch: arm
+          - goos: darwin
+            goarch: riscv64
+          # Windows only supports amd64, arm64, 386
+          - goos: windows
+            goarch: arm
+          - goos: windows
+            goarch: riscv64
+          # FreeBSD only supports amd64 and arm64
+          - goos: freebsd
+            goarch: "386"
+          - goos: freebsd
+            goarch: arm
+          - goos: freebsd
+            goarch: riscv64
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Build (lite)
+        if: matrix.build-mode == 'lite'
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          GOARM: 6
+        run: |
+          BINARY=iconhash
+          if [ "$GOOS" = "windows" ]; then BINARY="${BINARY}.exe"; fi
+          go build -trimpath -ldflags "-s -w" -o $BINARY .
+
+      - name: Build (full)
+        if: matrix.build-mode == 'full'
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          GOARM: 6
+        run: |
+          BINARY=iconhash-full
+          if [ "$GOOS" = "windows" ]; then BINARY="${BINARY}.exe"; fi
+          go build -trimpath -tags embed_fingerprints -ldflags "-s -w" -o $BINARY .
+
+  docker:
+    name: Docker Build
+    runs-on: ubuntu-latest
+    needs: test
     if: github.ref == 'refs/heads/main'
     steps:
-      - name: Check out code
+      - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        
+
       - name: Build and export Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           load: true
           tags: cyberspacesec/iconhash:test
-          
+
       - name: Test Docker image
-        run: |
-          docker run --rm cyberspacesec/iconhash:test --version 
+        run: docker run --rm cyberspacesec/iconhash:test --version

@@ -19,8 +19,7 @@ var (
 	FilePath     string
 	Base64Path   string
 	UserAgent    string
-	FofaFormat   bool
-	ShodanFormat bool
+	Engine       string // Search engine format: plain, fofa, shodan, censys, quake, zoomeye, hunter
 	SkipVerify   bool
 	Timeout      time.Duration
 	OutputFormat string
@@ -33,92 +32,20 @@ var (
 	AuthToken    string
 	ReadTimeout  time.Duration
 	WriteTimeout time.Duration
+	ServerProxy  string // Proxy for server mode
 )
 
-// MonitorData stores favicon monitoring information
-type MonitorData struct {
-	URL          string
-	CurrentHash  string
-	PreviousHash string
-	FirstHash    string
-	FirstSeen    time.Time
-	LastChanged  time.Time
-	IconData     []byte
-	ChangeCount  int
-}
-
-// Shared structs for command options
+// Batch/Output flags
 var (
-	// Batch command options
-	BatchOptions = struct {
-		InputFile     string
-		OutputFile    string
-		Delimiter     string
-		Format        string
-		ErrorHandling string
-	}{}
+	Proxy            string
+	OutputFile       string
+	InputFile        string
+	FingerprintDB    string // Path to custom fingerprint JSON database
+)
 
-	// Compare command options
-	CompareOptions = struct {
-		FirstSource  string
-		SecondSource string
-		Threshold    float64
-	}{}
-
-	// Search command options
-	SearchOptions = struct {
-		Hash        string
-		Query       string
-		Engine      string
-		OpenBrowser bool
-	}{}
-
-	// Screenshot command options
-	ScreenshotOptions = struct {
-		URL        string
-		OutputFile string
-		Size       string
-		Timeout    int
-	}{}
-
-	// Convert command options
-	ConvertOptions = struct {
-		Hash       string
-		FromFormat string
-		ToFormat   string
-		WithSyntax bool
-	}{}
-
-	// Stats command options
-	StatsOptions = struct {
-		InputFile  string
-		OutputFile string
-		Format     string
-		Visualize  bool
-		GroupBy    string
-	}{}
-
-	// Monitor command options
-	MonitorOptions = struct {
-		Targets         []string
-		TargetsFile     string
-		Interval        time.Duration
-		MaxRuns         int
-		OutputDir       string
-		Notify          bool
-		ChangeThreshold float64
-	}{}
-
-	// Scan command options
-	ScanOptions = struct {
-		Targets       []string
-		TargetsFile   string
-		IPRange       string
-		DomainSuffix  string
-		Threads       int
-		Timeout       time.Duration
-		OutputFile    string
-		OnlyWithIcons bool
-		PortList      string
-	}{}
+// Fingerprints update flags
+var (
+	fpUpdateOutput  string
+	fpUpdateURL     string
+	fpUpdateReplace bool
 )

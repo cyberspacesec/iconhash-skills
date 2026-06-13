@@ -1,3 +1,21 @@
+# GoReleaser configuration for iconhash-skills
+# Supports two build modes:
+#   1. Lite (default) - no embedded fingerprints, smaller binary
+#   2. Full - embedded fingerprints, larger binary
+#
+# Platform coverage:
+#   Linux:   amd64, arm64, 386, arm (armv6/armv7), riscv64
+#   macOS:   amd64 (Intel), arm64 (Apple Silicon)
+#   Windows: amd64, arm64, 386
+#   FreeBSD: amd64, arm64
+#
+# Usage:
+#   goreleaser release --clean              # Full release (tag-triggered)
+#   goreleaser release --clean --snapshot   # Snapshot release (testing)
+#   goreleaser build --clean --single-target  # Local build
+
+version: 2
+
 project_name: iconhash
 
 before:
@@ -5,47 +23,135 @@ before:
     - go mod tidy
 
 builds:
-  - main: .
+  # Lite build — no embedded fingerprints
+  - id: iconhash-lite
+    binary: iconhash
+    main: .
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.Version={{.Version}}
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.BuildDate={{.Date}}
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.BuildHash={{.ShortCommit}}
     env:
       - CGO_ENABLED=0
     goos:
       - linux
-      - windows
       - darwin
+      - windows
       - freebsd
     goarch:
       - amd64
       - arm64
+      - "386"
       - arm
-    goarm:
-      - 6
-      - 7
+      - riscv64
     ignore:
       - goos: darwin
-        goarch: 386
+        goarch: "386"
+      - goos: darwin
+        goarch: arm
+      - goos: darwin
+        goarch: riscv64
+      - goos: windows
+        goarch: arm
+      - goos: windows
+        goarch: riscv64
+      - goos: freebsd
+        goarch: "386"
+      - goos: freebsd
+        goarch: arm
+      - goos: freebsd
+        goarch: riscv64
+
+  # Full build — with embedded fingerprints
+  - id: iconhash-full
+    binary: iconhash-full
+    main: .
+    flags:
+      - -trimpath
+    tags:
+      - embed_fingerprints
     ldflags:
       - -s -w
-      - -X main.version={{.Version}}
-      - -X main.commit={{.Commit}}
-      - -X main.date={{.Date}}
-      - -X main.builtBy=goreleaser
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.Version={{.Version}}
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.BuildDate={{.Date}}
+      - -X github.com/cyberspacesec/iconhash-skills/cmd.BuildHash={{.ShortCommit}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+      - freebsd
+    goarch:
+      - amd64
+      - arm64
+      - "386"
+      - arm
+      - riscv64
+    ignore:
+      - goos: darwin
+        goarch: "386"
+      - goos: darwin
+        goarch: arm
+      - goos: darwin
+        goarch: riscv64
+      - goos: windows
+        goarch: arm
+      - goos: windows
+        goarch: riscv64
+      - goos: freebsd
+        goarch: "386"
+      - goos: freebsd
+        goarch: arm
+      - goos: freebsd
+        goarch: riscv64
 
 archives:
-  - format: tar.gz
+  - id: lite
+    builds:
+      - iconhash-lite
     name_template: >-
-      {{ .ProjectName }}_
-      {{- .Version }}_
-      {{- title .Os }}_
+      iconhash_lite_
+      {{- .Os }}_
       {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "arm64" }}aarch64
       {{- else if eq .Arch "386" }}i386
+      {{- else if eq .Arch "arm" }}armv6h
       {{- else }}{{ .Arch }}{{ end }}
-      {{- if .Arm }}v{{ .Arm }}{{ end }}
     format_overrides:
       - goos: windows
         format: zip
+    files:
+      - README.md
+      - LICENSE
+      - SKILLS.md
+      - data/fingerprints.json
+      - data/fingerprints.version.json
+
+  - id: full
+    builds:
+      - iconhash-full
+    name_template: >-
+      iconhash_full_
+      {{- .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "arm64" }}aarch64
+      {{- else if eq .Arch "386" }}i386
+      {{- else if eq .Arch "arm" }}armv6h
+      {{- else }}{{ .Arch }}{{ end }}
+    format_overrides:
+      - goos: windows
+        format: zip
+    files:
+      - README.md
+      - LICENSE
+      - SKILLS.md
 
 checksum:
-  name_template: 'checksums.txt'
+  name_template: "checksums.txt"
 
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
@@ -54,6 +160,64 @@ changelog:
   sort: asc
   filters:
     exclude:
-      - '^docs:'
-      - '^test:'
-      - '^chore:' 
+      - "^docs:"
+      - "^test:"
+      - "^chore:"
+      - "merge conflict"
+  groups:
+    - title: "🚀 Features"
+      regexp: '^.*?feat(\([[:word:]]+\))??!?:.+$'
+      order: 0
+    - title: "🐛 Bug Fixes"
+      regexp: '^.*?fix(\([[:word:]]+\))??!?:.+$'
+      order: 1
+    - title: "🔧 Other Changes"
+      order: 999
+
+release:
+  github:
+    owner: cyberspacesec
+    name: iconhash-skills
+  draft: false
+  prerelease: auto
+  mode: replace
+  header: |
+    ## IconHash — Favicon Hash Calculator for Cyber-Space Mapping
+
+    A CLI tool and Go SDK for calculating MMH3 favicon hashes and identifying web services.
+
+    ### Build Variants
+    - **Lite** (`iconhash_lite_*`): Smaller binary, fingerprints loaded from external file or auto-downloaded
+    - **Full** (`iconhash_full_*`): Larger binary with 700+ embedded fingerprints, works offline
+
+    ### Supported Platforms
+    | OS | Architectures |
+    |---|---|
+    | Linux | x86_64, aarch64, i386, armv6h, riscv64 |
+    | macOS | x86_64 (Intel), aarch64 (Apple Silicon) |
+    | Windows | x86_64, aarch64, i386 |
+    | FreeBSD | x86_64, aarch64 |
+
+    ### Quick Install (Linux/macOS)
+    ```bash
+    # Download, extract, and run (example for Linux x86_64):
+    wget https://github.com/cyberspacesec/iconhash-skills/releases/latest/download/iconhash_lite_linux_x86_64.tar.gz
+    tar xzf iconhash_lite_linux_x86_64.tar.gz
+    ./iconhash --help
+    ```
+
+    ### Install from Source
+    ```bash
+    go install github.com/cyberspacesec/iconhash-skills/cmd/iconhash@latest
+    ```
+
+    ### Usage
+    ```bash
+    iconhash url https://example.com/favicon.ico          # Hash from URL
+    iconhash identify https://example.com                  # Identify a website
+    iconhash lookup -- -305179312                          # Lookup fingerprint
+    iconhash batch -i urls.txt                             # Batch process
+    iconhash server -p 8080                                # Start API server
+    ```
+
+    See [SKILLS.md](https://github.com/cyberspacesec/iconhash-skills/blob/main/SKILLS.md) for complete documentation.
