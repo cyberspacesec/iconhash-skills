@@ -37,10 +37,10 @@ var (
 
 // Batch/Output flags
 var (
-	Proxy            string
-	OutputFile       string
-	InputFile        string
-	FingerprintDB    string // Path to custom fingerprint JSON database
+	Proxy         string
+	OutputFile    string
+	InputFile     string
+	FingerprintDB string // Path to custom fingerprint JSON database
 )
 
 // Fingerprints update flags

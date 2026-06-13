@@ -612,7 +612,7 @@ type DiscoverResult struct {
 
 // DiscoverResponse is the response format for the discover endpoint
 type DiscoverResponse struct {
-	SiteURL string            `json:"site_url"`
+	SiteURL string           `json:"site_url"`
 	Results []DiscoverResult `json:"results"`
 }
 
@@ -763,10 +763,10 @@ func (s *Server) handleFingerprints(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(map[string]interface{}{
-		"count":        s.fingerprint.Count(),
+		"count":         s.fingerprint.Count(),
 		"total_entries": s.fingerprint.TotalEntries(),
-		"returned":     len(entries),
-		"fingerprints": entries,
+		"returned":      len(entries),
+		"fingerprints":  entries,
 	})
 }
 

@@ -247,10 +247,10 @@ func (h *IconHasher) DiscoverAndHash(ctx context.Context, siteURL string, opts *
 
 // IdentifyResult holds the result of identifying a website via its favicons.
 type IdentifyResult struct {
-	URL     string                       // The discovered favicon URL
-	Hash    string                       // The calculated MMH3 hash (empty if Err is set)
+	URL     string                         // The discovered favicon URL
+	Hash    string                         // The calculated MMH3 hash (empty if Err is set)
 	Matches []fingerprint.FingerprintEntry // Fingerprint matches (may be empty)
-	Err     error                        // Non-nil if this URL failed
+	Err     error                          // Non-nil if this URL failed
 }
 
 // Identify discovers all favicons for a site, hashes each, and looks up
